@@ -83,12 +83,39 @@ module.exports = {
       // chunks: ['index']
     }),
 
-    // Internal page
+    // Research page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/page.html',
-      filename: './pages/page.html'
+      template: './src/pages/research.html',
+      filename: './pages/research.html'
+      // chunks: ['index']
+    }),
+
+    // define page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/define.html',
+      filename: './pages/define.html'
+      // chunks: ['index']
+    }),
+
+    // develop page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/develop.html',
+      filename: './pages/develop.html'
+      // chunks: ['index']
+    }),
+
+    // deliver page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/deliver.html',
+      filename: './pages/deliver.html'
       // chunks: ['index']
     }),
 

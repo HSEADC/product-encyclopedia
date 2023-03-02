@@ -5,10 +5,14 @@
 html,
 body {
   height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-user-select: none;
+  -khtml-user-select: none;
 }
 
 body {
-  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-family: 'HelveticaNeue';
   font-weight: 400;
 }
 
