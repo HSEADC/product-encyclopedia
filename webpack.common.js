@@ -119,6 +119,15 @@ module.exports = {
       // chunks: ['index']
     }),
 
+    // history page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/research/history.html',
+      filename: './pages/research/history.html'
+      // chunks: ['index']
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
