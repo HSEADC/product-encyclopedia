@@ -146,6 +146,15 @@ module.exports = {
       // chunks: ['index']
     }),
 
+    // mvp page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/research/mvp.html',
+      filename: './pages/research/mvp.html'
+      // chunks: ['index']
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
