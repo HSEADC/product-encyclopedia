@@ -318,6 +318,15 @@ body {
     align-items: flex-start;
     padding: 0px;
     gap: 36px;
+
+  }
+
+  .O_InformationSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 36px;
     width: 45vw;
   }
 
@@ -387,13 +396,21 @@ body {
 
   .InformationBlock {
     display: grid;
-    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-columns: 2fr 4fr;
     flex-direction: row;
     align-items: flex-start;
     padding: 34px 34px 100px 34px;
     gap: 20px;
     margin-top: 60px;
     width: 100vw;
+  }
+
+  .InformationSectionBlock {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 34px 34px 100px 34px;
   }
 
   .DescriptionTextBlock {
