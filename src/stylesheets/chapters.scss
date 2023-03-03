@@ -8,6 +8,17 @@ body {
         line-height: 100%;
         text-align: center;
     }
+
+    .A_HeaderThree {
+        font-family: 'Wermut';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 99.99%;
+        letter-spacing: -0.03em;
+        color: var(--black);
+    }
+
     .M_BreadCrumbs {
         display: flex;
         flex-direction: row;
@@ -61,13 +72,12 @@ body {
     }
 
     .O_CaptionBlock {
-
         display: grid;
         grid-template-columns: 3fr 1fr;
         flex-direction: row;
         align-items: flex-start;
-        padding: 0px 34px 0px 34px;
         gap: 20px;
+        width: 100%;
     }
 
     .InformationChapterBlock {

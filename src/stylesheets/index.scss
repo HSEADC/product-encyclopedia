@@ -196,6 +196,7 @@ body {
     gap: 10px;
     background: var(--beige);
     border-radius: 10px;
+    width: 100%;
   }
 
   .A_FooterChapter {
@@ -248,7 +249,6 @@ body {
   .M_ParagraphBlock {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 0px;
     gap: 24px;
   }
@@ -266,6 +266,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+    width: 100%;
   }
 
   .M_ChapterList {

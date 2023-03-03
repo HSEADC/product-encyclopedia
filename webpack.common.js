@@ -128,6 +128,24 @@ module.exports = {
       // chunks: ['index']
     }),
 
+    // digital_product page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/research/digital_product.html',
+      filename: './pages/research/digital_product.html'
+      // chunks: ['index']
+    }),
+
+    // digital_process page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/research/digital_process.html',
+      filename: './pages/research/digital_process.html'
+      // chunks: ['index']
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
@@ -138,6 +156,7 @@ module.exports = {
       }
     ])
   ],
+
   optimization: {
     minimizer: [new CssMinimizerPlugin()]
   }
