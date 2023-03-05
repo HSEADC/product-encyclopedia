@@ -155,6 +155,123 @@ module.exports = {
       // chunks: ['index']
     }),
 
+    // product_market_fit page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/research/product_market_fit.html',
+      filename: './pages/research/product_market_fit.html'
+      // chunks: ['index']
+    }),
+
+    // product_market_fit page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/research/product_market_fit.html',
+      filename: './pages/research/product_market_fit.html'
+      // chunks: ['index']
+    }),
+
+    // business_requirement page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/research/business_requirements.html',
+      filename: './pages/research/business_requirements.html'
+      // chunks: ['index']
+    }),
+
+    // functional_requirement page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/research/functional_requirements.html',
+      filename: './pages/research/functional_requirements.html'
+      // chunks: ['index']
+    }),
+
+    // how_to_generate_ideas page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/research/how_to_generate_ideas.html',
+      filename: './pages/research/how_to_generate_ideas.html'
+      // chunks: ['index']
+    }),
+
+    // brainstorming page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/research/ideas/brainstorming.html',
+      filename: './pages/research/ideas/brainstorming.html'
+      // chunks: ['index']
+    }),
+
+    // list_making page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/research/ideas/list_making.html',
+      filename: './pages/research/ideas/list_making.html'
+      // chunks: ['index']
+    }),
+
+    // free_writing page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/research/ideas/free_writing.html',
+      filename: './pages/research/ideas/free_writing.html'
+      // chunks: ['index']
+    }),
+
+    // brainstorming page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/research/ideas/brainstorming.html',
+      filename: './pages/research/ideas/brainstorming.html'
+      // chunks: ['index']
+    }),
+
+    // triz page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/research/ideas/triz.html',
+      filename: './pages/research/ideas/triz.html'
+      // chunks: ['index']
+    }),
+
+    // scamper page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/research/ideas/scamper.html',
+      filename: './pages/research/ideas/scamper.html'
+      // chunks: ['index']
+    }),
+
+    // mindmapping page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/research/ideas/mindmapping.html',
+      filename: './pages/research/ideas/mindmapping.html'
+      // chunks: ['index']
+    }),
+
+    // customer_development page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/define/customer_development.html',
+      filename: './pages/define/customer_development.html'
+      // chunks: ['index']
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
