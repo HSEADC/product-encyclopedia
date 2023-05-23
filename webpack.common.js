@@ -87,8 +87,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/research.html',
-      filename: './pages/research.html'
+      template: './src/parts/research.html',
+      filename: './parts/research.html'
       // chunks: ['index']
     }),
 
@@ -96,8 +96,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/define.html',
-      filename: './pages/define.html'
+      template: './src/parts/define.html',
+      filename: './parts/define.html'
       // chunks: ['index']
     }),
 
@@ -105,8 +105,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/develop.html',
-      filename: './pages/develop.html'
+      template: './src/parts/develop.html',
+      filename: './parts/develop.html'
       // chunks: ['index']
     }),
 
@@ -114,8 +114,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/deliver.html',
-      filename: './pages/deliver.html'
+      template: './src/parts/deliver.html',
+      filename: './parts/deliver.html'
       // chunks: ['index']
     }),
 
@@ -123,8 +123,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/research/history.html',
-      filename: './pages/research/history.html'
+      template: './src/parts/research/history.html',
+      filename: './parts/research/history.html'
       // chunks: ['index']
     }),
 
@@ -132,8 +132,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/research/digital_product.html',
-      filename: './pages/research/digital_product.html'
+      template: './src/parts/research/digital_product.html',
+      filename: './parts/research/digital_product.html'
       // chunks: ['index']
     }),
 
@@ -141,8 +141,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/research/digital_process.html',
-      filename: './pages/research/digital_process.html'
+      template: './src/parts/research/digital_process.html',
+      filename: './parts/research/digital_process.html'
       // chunks: ['index']
     }),
 
@@ -150,8 +150,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/research/mvp.html',
-      filename: './pages/research/mvp.html'
+      template: './src/parts/research/mvp.html',
+      filename: './parts/research/mvp.html'
       // chunks: ['index']
     }),
 
@@ -159,8 +159,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/research/product_market_fit.html',
-      filename: './pages/research/product_market_fit.html'
+      template: './src/parts/research/product_market_fit.html',
+      filename: './parts/research/product_market_fit.html'
       // chunks: ['index']
     }),
 
@@ -168,8 +168,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/research/product_market_fit.html',
-      filename: './pages/research/product_market_fit.html'
+      template: './src/parts/research/product_market_fit.html',
+      filename: './parts/research/product_market_fit.html'
       // chunks: ['index']
     }),
 
@@ -177,8 +177,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/research/business_requirements.html',
-      filename: './pages/research/business_requirements.html'
+      template: './src/parts/research/business_requirements.html',
+      filename: './parts/research/business_requirements.html'
       // chunks: ['index']
     }),
 
@@ -186,8 +186,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/research/functional_requirements.html',
-      filename: './pages/research/functional_requirements.html'
+      template: './src/parts/research/functional_requirements.html',
+      filename: './parts/research/functional_requirements.html'
       // chunks: ['index']
     }),
 
@@ -195,8 +195,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/research/how_to_generate_ideas.html',
-      filename: './pages/research/how_to_generate_ideas.html'
+      template: './src/parts/research/how_to_generate_ideas.html',
+      filename: './parts/research/how_to_generate_ideas.html'
       // chunks: ['index']
     }),
 
@@ -204,8 +204,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/research/ideas/brainstorming.html',
-      filename: './pages/research/ideas/brainstorming.html'
+      template: './src/parts/research/ideas/brainstorming.html',
+      filename: './parts/research/ideas/brainstorming.html'
       // chunks: ['index']
     }),
 
@@ -213,8 +213,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/research/ideas/list_making.html',
-      filename: './pages/research/ideas/list_making.html'
+      template: './src/parts/research/ideas/list_making.html',
+      filename: './parts/research/ideas/list_making.html'
       // chunks: ['index']
     }),
 
@@ -222,8 +222,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/research/ideas/free_writing.html',
-      filename: './pages/research/ideas/free_writing.html'
+      template: './src/parts/research/ideas/free_writing.html',
+      filename: './parts/research/ideas/free_writing.html'
       // chunks: ['index']
     }),
 
@@ -231,8 +231,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/research/ideas/brainstorming.html',
-      filename: './pages/research/ideas/brainstorming.html'
+      template: './src/parts/research/ideas/brainstorming.html',
+      filename: './parts/research/ideas/brainstorming.html'
       // chunks: ['index']
     }),
 
@@ -240,8 +240,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/research/ideas/triz.html',
-      filename: './pages/research/ideas/triz.html'
+      template: './src/parts/research/ideas/triz.html',
+      filename: './parts/research/ideas/triz.html'
       // chunks: ['index']
     }),
 
@@ -249,8 +249,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/research/ideas/scamper.html',
-      filename: './pages/research/ideas/scamper.html'
+      template: './src/parts/research/ideas/scamper.html',
+      filename: './parts/research/ideas/scamper.html'
       // chunks: ['index']
     }),
 
@@ -258,8 +258,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/research/ideas/mindmapping.html',
-      filename: './pages/research/ideas/mindmapping.html'
+      template: './src/parts/research/ideas/mindmapping.html',
+      filename: './parts/research/ideas/mindmapping.html'
       // chunks: ['index']
     }),
 
@@ -267,8 +267,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/define/customer_development.html',
-      filename: './pages/define/customer_development.html'
+      template: './src/parts/define/customer_development.html',
+      filename: './parts/define/customer_development.html'
       // chunks: ['index']
     }),
 
