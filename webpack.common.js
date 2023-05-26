@@ -263,12 +263,84 @@ module.exports = {
       // chunks: ['index']
     }),
 
+    // target_audience
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/parts/define/target_audience.html',
+      filename: './parts/define/target_audience.html'
+      // chunks: ['index']
+    }),
+
+    // competitor_analysis
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/parts/define/competitor_analysis.html',
+      filename: './parts/define/competitor_analysis.html'
+      // chunks: ['index']
+    }),
+
+    // interview_methods
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/parts/define/interview_methods.html',
+      filename: './parts/define/interview_methods.html'
+      // chunks: ['index']
+    }),
+
     // customer_development page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/parts/define/customer_development.html',
       filename: './parts/define/customer_development.html'
+      // chunks: ['index']
+    }),
+    
+    // swot page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/parts/define/swot.html',
+      filename: './parts/define/swot.html'
+      // chunks: ['index']
+    }),
+
+    // smart page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/parts/define/smart.html',
+      filename: './parts/define/smart.html'
+      // chunks: ['index']
+    }),
+
+    // unit_economics page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/parts/define/unit_economics.html',
+      filename: './parts/define/unit_economics.html'
+      // chunks: ['index']
+    }),
+
+    // jtbd page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/parts/define/jtbd.html',
+      filename: './parts/define/jtbd.html'
+      // chunks: ['index']
+    }),
+
+    // cjm page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/parts/define/cjm.html',
+      filename: './parts/define/cjm.html'
       // chunks: ['index']
     }),
 
