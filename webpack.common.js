@@ -3,6 +3,7 @@ const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
+
 const webpack = require('webpack')
 const path = require('path')
 
@@ -11,7 +12,7 @@ module.exports = {
     index: './src/index.js'
   },
   output: {
-    filename: '[name].js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'docs')
     // clean: true
   },
@@ -26,7 +27,7 @@ module.exports = {
             presets: ['@babel/preset-env', '@babel/preset-react'],
             plugins: ['@babel/plugin-proposal-class-properties']
           }
-        }
+        },
       },
       {
         test: /\.(sa|sc|c)ss$/i,
@@ -65,7 +66,7 @@ module.exports = {
         options: {
           name: 'fonts/[name].[ext]'
         }
-      }
+      },
     ]
   },
   plugins: [
@@ -341,6 +342,51 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/parts/define/cjm.html',
       filename: './parts/define/cjm.html'
+      // chunks: ['index']
+    }),
+
+    // roadmap page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/parts/develop/roadmap.html',
+      filename: './parts/develop/roadmap.html'
+      // chunks: ['index']
+    }),
+
+    // lean_canvas page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/parts/develop/lean_canvas.html',
+      filename: './parts/develop/lean_canvas.html'
+      // chunks: ['index']
+    }),
+
+    // user_flow page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/parts/develop/user_flow.html',
+      filename: './parts/develop/user_flow.html'
+      // chunks: ['index']
+    }),
+
+    // user_stories page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/parts/develop/user_stories.html',
+      filename: './parts/develop/user_stories.html'
+      // chunks: ['index']
+    }),
+
+    // what_user_gets page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/parts/deliver/what_user_gets.html',
+      filename: './parts/deliver/what_user_gets.html'
       // chunks: ['index']
     }),
 

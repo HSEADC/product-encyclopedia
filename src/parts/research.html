@@ -235,6 +235,276 @@
 
       </div>
     </div>
+
+    <div class="A_TableTest">
+
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>1 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">MVP — версия нового продукта,которая позволяет команде собрать максимальное количество проверенных знаний о клиентах с наименьшими усилиями</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardTrue">
+          <div>
+            <h3 class="question-card-true">1 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это правда</p>
+            <div class="A_MenuItem_non-active">MVP — версия нового продукта,которая позволяет команде собрать максимальное количество проверенных знаний о клиентах с наименьшими усилиями</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">/</p>
+          </div>
+        </div>
+      </div>  
+
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>2 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Цель MVP&nbsp;&mdash; это получить урезанную версию программного обеспечения для скорейшего запуска, без последующих усовершенствований</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardFalse">
+          <div>
+            <h3 class="question-card-false">2 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это ложь</p>
+            <div class="A_MenuItem_non-active">Цель MVP&nbsp;&mdash; это получить урезанную версию программного обеспечения для скорейшего запуска, без последующих усовершенствований</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Несмотря на&nbsp;то, что он&nbsp;функционально ограничен и&nbsp;выглядит необработанным, он&nbsp;призван обеспечить основную ценность и&nbsp;получить обратную связь, чтобы двигаться дальше.</p>
+          </div>
+        </div>
+      </div>      
+
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>3 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Документ бизнес-требований (BRD)&nbsp;&mdash; это документ с&nbsp;описанием правил для сотрудников будущего проекта</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardFalse">
+          <div>
+            <h3 class="question-card-false">3 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это ложь</p>
+            <div class="A_MenuItem_non-active">Документ бизнес-требований (BRD)&nbsp;&mdash; это документ с&nbsp;описанием правил для сотрудников будущего проекта</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Обычно в нем объясняются причины запуска проекта, набор бизнес-ценностей, которые он должен обеспечить, цель выполнения проекта и т. д. Основная идея BRD состоит в том, чтобы прояснить все бизнес-аспекты проекта.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>4 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Определение характеристик продукта&nbsp;&mdash; относится к&nbsp;нефункциональным требованиям</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardFalse">
+          <div>
+            <h3 class="question-card-false">4 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это ложь</p>
+            <div class="A_MenuItem_non-active">Определение характеристик продукта&nbsp;&mdash; относится к&nbsp;нефункциональным требованиям</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Функциональные требования&nbsp;&mdash; это характеристики продукта или функции, которые разработчики должны реализовать, чтобы пользователи могли выполнять свои задачи.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>5 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Пример: Система должна быть способна обслуживать 20&nbsp;миллионов пользователей без снижения производительности. Относится к&nbsp;функциональным требованиям?</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardFalse">
+          <div>
+            <h3 class="question-card-false">5 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это ложь</p>
+            <div class="A_MenuItem_non-active">Пример: Система должна быть способна обслуживать 20&nbsp;миллионов пользователей без снижения производительности. Относится к&nbsp;функциональным требованиям?</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Нефункциональные требования, не&nbsp;связанные с&nbsp;функциональностью системы, скорее определяют, как должна работать система.</p>
+          </div>
+        </div>
+      </div>    
+      
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>6 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">К&nbsp;типам функциональных требований можно отнести отнести: внешние интерфейсы, обработку транзакций и&nbsp;уровни авторизаций</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardTrue">
+          <div>
+            <h3 class="question-card-true">6 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это правда</p>
+            <div class="A_MenuItem_non-active">К&nbsp;типам функциональных требований можно отнести отнести: внешние интерфейсы, обработку транзакций и&nbsp;уровни авторизаций</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Функциональные требования могут быть классифицированы в&nbsp;соответствии с&nbsp;различными критериями. Например, мы&nbsp;можем сгруппировать их&nbsp;на&nbsp;основе функций, которые данная функция должна выполнять в&nbsp;конечном продукте. Конечно, они будут отличаться в&nbsp;зависимости от&nbsp;разрабатываемого продукта.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>7 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Нефункциональные требования описывают, как должна вести себя система, и&nbsp;устанавливают ограничения ее&nbsp;функциональности</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardFalse">
+          <div>
+            <h3 class="question-card-false">7 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это ложь</p>
+            <div class="A_MenuItem_non-active">Нефункциональные требования описывают, как должна вести себя система, и&nbsp;устанавливают ограничения ее&nbsp;функциональности</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Функциональные требования могут быть классифицированы в&nbsp;соответствии с&nbsp;различными критериями. Например, мы&nbsp;можем сгруппировать их&nbsp;на&nbsp;основе функций, которые данная функция должна выполнять в&nbsp;конечном продукте. Конечно, они будут отличаться в&nbsp;зависимости от&nbsp;разрабатываемого продукта.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>8 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Требования: безопасность, надежность, доступность и&nbsp;т.&nbsp;д. относится к&nbsp;функциональным требованиям</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardFalse">
+          <div>
+            <h3 class="question-card-false">8 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это ложь</p>
+            <div class="A_MenuItem_non-active">Требования: безопасность, надежность, доступность и&nbsp;т.&nbsp;д. относится к&nbsp;функциональным требованиям</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">/</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>9 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Алекс Осборн, широко известен как отец мозгового штурма, говорил: самое главное в&nbsp;самом процессе это конкретные, сдержанные идеи с&nbsp;минимальным количеством, но&nbsp;с&nbsp;большим качеством самих идей</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardFalse">
+          <div>
+            <h3 class="question-card-false">9 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это ложь</p>
+            <div class="A_MenuItem_non-active">Алекс Осборн, широко известен как отец мозгового штурма, говорил: самое главное в&nbsp;самом процессе это конкретные, сдержанные идеи с&nbsp;минимальным количеством, но&nbsp;с&nbsp;большим качеством самих идей</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">
+              Наоборот, Алекс Осборн даже создал правила, а&nbsp;именно: нет критики идей, стремитесь к&nbsp;большому количеству идей, опирайтесь на&nbsp;идеи друг друга, поощряйте дикие и&nbsp;преувеличенные идеи.
+              <br><br>
+              Он&nbsp;обнаружил, что при соблюдении этих правил было создано
+              гораздо больше идей и&nbsp;что большее количество оригинальных
+              идей породило большее количество полезных идей.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>10 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Более организованный метод рисования диаграммы-паука (spider map), где все идеи рисуются из&nbsp;центра без каких-либо конкретных правил &mdash;он относится к&nbsp;термину майндмэпинг</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardTrue">
+          <div>
+            <h3 class="question-card-true">10 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это правда</p>
+            <div class="A_MenuItem_non-active">Более организованный метод рисования диаграммы-паука (spider map), где все идеи рисуются из&nbsp;центра без каких-либо конкретных правил &mdash;он относится к&nbsp;термину майндмэпинг</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">
+              Ментальные карты Бьюзана славились использованием ярких цветов. Обычно каждое ответвление от&nbsp;основной идеи было разного яркого цвета. Каждая ветвь с&nbsp;ее&nbsp;меньшими ответвлениями была нарисована в&nbsp;похожем изогнутом стиле. Небольшие рисунки и&nbsp;иллюстрации были добавлены, чтобы помочь с&nbsp;запоминанием, особенно при использовании в&nbsp;качестве учебного пособия.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
  
     <div class="FooterBlock">
       <div class="S_Navigation">
@@ -316,6 +586,20 @@
       </div>
       
     </div>
+
+    
+    <script>
+      function flipCard(card) {
+        card.classList.toggle('flipped');
+      }
+
+      function handleAnswer(event, button, isTrue) {
+        event.stopPropagation();
+        const card = button.closest('.question-card');
+        card.classList.add('flipped', isTrue ? 'true' : 'false');
+      }
+    </script>
+
 
   </body>
 </html>

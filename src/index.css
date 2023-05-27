@@ -5,3 +5,74 @@
 @import 'stylesheets/index.scss';
 @import 'stylesheets/page.scss';
 @import 'stylesheets/chapters.scss';
+
+.timeline {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.dates {
+  padding-left: 0;
+  list-style: none;
+}
+
+.dates li {
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  width: 100px;
+}
+
+
+.dates li:hover {
+  background-color: #e0e0e0;
+}
+
+.details {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.details h2 {
+  margin-top: 0;
+}
+
+.details p {
+  margin-bottom: 20px;
+}
+
+.details button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.details button:hover {
+  background-color: #45a049;
+}
+  /* Добавьте дополнительные стили по необходимости */
+  
+
+  .question-card h3 {
+    margin-top: 0;
+  }
+  
+  .question-card .back {
+    display: none;
+  }
+  
+  .question-card.flipped .front {
+    display: none;
+  }
+  
+  .question-card.flipped .back {
+    display: flex;
+  }
