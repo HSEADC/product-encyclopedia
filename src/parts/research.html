@@ -31,9 +31,9 @@
       <div class="O_StickyCardAbout">
         <div class="A_HeaderTwo">Исследование</div>
         <div class="A_CardLine"></div>
-        <div class="A_Paragraph">&mdash;&nbsp;Планирование и&nbsp;определение контекста</div>
-        <div class="A_Paragraph">&mdash;&nbsp;Проведение первичных исследований с&nbsp;клиентами и&nbsp;соответствующими экспертами</div>
-        <div class="A_Paragraph">&mdash;&nbsp;Использование существующих исследований посредством вторичных или кабинетных исследований</div>
+        <div class="A_Paragraph"></div>
+        <div class="A_Paragraph"></div>
+        <div class="A_Paragraph"></div>
       </div>
 
       <div class="O_Information">
@@ -66,9 +66,6 @@
           <div class="M_ParagraphBlock">
             <div class="A_Paragraph">
               Цель этапа состоит в&nbsp;том, чтобы определить и&nbsp;контекстуализировать реальную проблему. На&nbsp;этом этапе цель&nbsp;&mdash; полностью погрузиться в&nbsp;проблему с&nbsp;помощью исследования. Необходимо стремиться понять, а&nbsp;не&nbsp;предполагать контекст проблемы.        
-            </div>
-            <div class="A_Paragraph">
-              Одни из&nbsp;первичных действий на&nbsp;этом этапе включают в&nbsp;себя исследование рынка и&nbsp;состалвение портрета пользователей. Большинство компаний ориентированы на&nbsp;целевую аудиторию, что означает сосредоточение внимания на&nbsp;потребностях, желаниях и&nbsp;поведении пользователей.        
             </div>
             <div class="A_Paragraph">
               Одни из&nbsp;первичных действий на&nbsp;этом этапе включают в&nbsp;себя исследование рынка и&nbsp;состалвение портрета пользователей. Большинство компаний ориентированы на&nbsp;целевую аудиторию, что означает сосредоточение внимания на&nbsp;потребностях, желаниях и&nbsp;поведении пользователей.        
@@ -477,33 +474,6 @@
         </div>
       </div>
 
-      <div class="question-card" onclick="flipCard(event)">
-        <div class="front O_QuestionCard">
-          <div>
-            <h3>10 вопрос</h3>
-            <div class="A_CardLineQ"></div>
-            <p class="A_Paragraph">Более организованный метод рисования диаграммы-паука (spider map), где все идеи рисуются из&nbsp;центра без каких-либо конкретных правил &mdash;он относится к&nbsp;термину майндмэпинг</p>           
-          </div>
-          <div>          
-            <button onclick="handleAnswer(event, this, true)">Правда</button>
-            <button onclick="handleAnswer(event, this, false)">Ложь</button>
-          </div>
-        </div>
-        <div class="back O_QuestionCardTrue">
-          <div>
-            <h3 class="question-card-true">10 ответ</h3>
-            <div class="A_CardLineQ"></div>
-            <p class="A_Paragraph">Это правда</p>
-            <div class="A_MenuItem_non-active">Более организованный метод рисования диаграммы-паука (spider map), где все идеи рисуются из&nbsp;центра без каких-либо конкретных правил &mdash;он относится к&nbsp;термину майндмэпинг</div> 
-          </div>
-          <div>
-            <div class="A_CardLineQ"></div>
-            <p class="A_Paragraph">
-              Ментальные карты Бьюзана славились использованием ярких цветов. Обычно каждое ответвление от&nbsp;основной идеи было разного яркого цвета. Каждая ветвь с&nbsp;ее&nbsp;меньшими ответвлениями была нарисована в&nbsp;похожем изогнутом стиле. Небольшие рисунки и&nbsp;иллюстрации были добавлены, чтобы помочь с&nbsp;запоминанием, особенно при использовании в&nbsp;качестве учебного пособия.</p>
-          </div>
-        </div>
-      </div>
-      
     </div>
  
     <div class="FooterBlock">
@@ -600,6 +570,49 @@
       }
     </script>
 
+    <script>
+            // Получаем элементы DOM
+      const stickyCardAbout = document.querySelector('.O_StickyCardAbout');
+      const paragraphs = stickyCardAbout.querySelectorAll('.A_Paragraph');
+
+      // Определяем тексты для разных моментов прокрутки
+      const textByPosition = {
+        0: [
+          '&mdash;&nbsp;Планирование и&nbsp;определение контекста',
+          '&mdash;&nbsp;Проведение первичных исследований с&nbsp;клиентами и&nbsp;соответствующими экспертами',
+          '&mdash;&nbsp;Использование существующих исследований посредством вторичных или кабинетных исследований',
+        ],
+        1200: [
+          'На этом этапе цель — полностью погрузиться в проблему с помощью исследования. Необходимо стремиться понять, а не предполагать контекст проблемы.',
+          'Одни из первичных действий на этом этапе включают в себя исследование рынка и состалвение портрета пользователей.',
+          '',
+        ],
+        2800: [
+          'Cтоит дать конкретное определение цифровому продукту&nbsp;&mdash; это нечто, предполагающее интерфейс и&nbsp;user experience, а&nbsp;также предоставляет доступ к&nbsp;сервису.',
+          'Бизнес-требования определяют стратегический путь проекта. Они включают требования к&nbsp;проекту высокого уровня, которые описывают общую бизнес-цель с&nbsp;точки зрения компании.',
+          '&laquo;Creative thinking inspires ideas. Ideas inspire change&raquo;&nbsp;&mdash; Барбара Янушкевич',
+        ],
+      };
+
+      // Обработчик события прокрутки страницы
+      window.addEventListener('scroll', function () {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Проверяем текущую позицию прокрутки и обновляем тексты внутри A_Paragraph
+        paragraphs.forEach((paragraph, index) => {
+          let newText = '';
+          const positions = Object.keys(textByPosition).map(Number);
+          const closestPosition = positions.reduce((prev, curr) =>
+            Math.abs(curr - scrollTop) < Math.abs(prev - scrollTop) ? curr : prev
+          );
+          if (scrollTop >= closestPosition) {
+            const texts = textByPosition[closestPosition];
+            newText = texts[index % texts.length];
+          }
+          paragraph.innerHTML = newText;
+        });
+      });
+    </script>
 
   </body>
 </html>
