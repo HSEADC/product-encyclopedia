@@ -3,6 +3,7 @@ body {
   flex-direction: column;
   font-family: 'HelveticaNeue';
   overflow-x: hidden;
+  heig
 
   ::selection{
     background-color: var(--pink);
@@ -962,8 +963,168 @@ body {
     display: flex;
     flex-direction: row;
     gap: 50px;
+  } 
+
+  .header {
+    display: none;
   }
-  
-  
 
 }
+
+@media (max-width: 1024px) {
+  body .InformationBlock {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .M_StickyCard {
+    height: 4vh !important;
+    position: static !important;
+  }
+
+  body .O_StickyCardAbout, body .O_StickyCardInfo, body .M_Tags  {
+    display: none !important;
+  }
+  
+  body .A_HeaderOne {
+    font-size: 36px;
+  }
+
+  body .A_HeaderTwo {
+    font-size: 32px;
+  }
+
+  body .A_Paragraph {
+    font-size: 16px;
+  }
+
+  body .A_Quote {
+    font-size: 24px;
+  }
+
+  body .O_CaptionBlock {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 80vw !important;
+  }
+
+  .M_CaptionPhoto {
+    display: none !important;
+  }
+
+  .M_InfoImage {
+    display: none !important;
+  }
+
+  body .A_MenuItem_non-active {
+    font-size: 14px;
+  }
+
+  body .O_Menu {
+    display: none !important;
+  }
+
+
+  /* Header */
+.header{
+  display: block !important ;
+  background-color: var(--white);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+}
+/* Logo */
+.logo {
+  display: inline-flex;
+  flex-direction: row;
+  height: 100%;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 130%;
+  margin: 6px 0px 0px 10px;
+}
+
+  
+  /* Nav menu */
+.nav{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: var(--white);
+  overflow: hidden;
+}
+.menu a{
+  display: block;
+  padding: 30px;
+  color: var(--black);
+}
+.menu a:hover{
+  background-color: var(--gray);
+}
+.nav{
+  max-height: 0;
+  transition: max-height .5s ease-out;
+}
+
+/* Menu Icon */
+.hamb{
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
+}/* Style label tag */
+
+.hamb-line {
+  background: var(--black);
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+  background: var(--black);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.hamb-line::before{
+  top: 7px;
+
+}
+.hamb-line::after{
+  top: -7px;
+}
+
+.side-menu {
+  display: none;
+} /* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+  max-height: 100%;
+  border-top: 1px solid #000000;
+
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+ }
