@@ -20,12 +20,6 @@ const Timeline = () => {
 
   return (
     <div className="timeline">
-      <div className="axis-y">
-        <div className="tick">100</div>
-        <div className="tick">200</div>
-        <div className="tick">300</div>
-        {/* Добавьте остальные деления оси у */}
-      </div>
       <ul className="dates">
         <li
           className={selectedYear === 1679 ? 'active' : ''}
@@ -238,16 +232,13 @@ const Timeline = () => {
           2015
         </li>
       </ul>
-      <div className="axis-x">
-        <div className="tick"></div>
-        
-        {/* Добавьте остальные деления оси х */}
-      </div>
-      {selectedDate && (
-        <div className="details">
+      <div className="details">
+        {selectedDate ? (
           <p>Что случилось? {selectedDate}</p>
-        </div>
-      )}
+        ) : (
+          <p>Информация о таймлайне</p>
+        )}
+      </div>
     </div>
   );
 };

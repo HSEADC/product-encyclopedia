@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const SurveyComponent = () => {
+const QuizComponent = () => {
   const [questions, setQuestions] = useState([
     {
       question: 'Вопрос 1',
@@ -101,4 +101,4 @@ const SurveyComponent = () => {
   );
 };
 
-export default SurveyComponent;
+export default QuizComponent;
