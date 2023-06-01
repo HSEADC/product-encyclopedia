@@ -541,15 +541,7 @@ var Timeline = function Timeline() {
 
   return /*#__PURE__*/react.createElement("div", {
     className: "timeline"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "axis-y"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "tick"
-  }, "100"), /*#__PURE__*/react.createElement("div", {
-    className: "tick"
-  }, "200"), /*#__PURE__*/react.createElement("div", {
-    className: "tick"
-  }, "300")), /*#__PURE__*/react.createElement("ul", {
+  }, /*#__PURE__*/react.createElement("ul", {
     className: "dates"
   }, /*#__PURE__*/react.createElement("li", {
     className: selectedYear === 1679 ? 'active' : '',
@@ -792,12 +784,8 @@ var Timeline = function Timeline() {
       marginLeft: calculateOffset(29)
     }
   }, "2015")), /*#__PURE__*/react.createElement("div", {
-    className: "axis-x"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "tick"
-  })), selectedDate && /*#__PURE__*/react.createElement("div", {
     className: "details"
-  }, /*#__PURE__*/react.createElement("p", null, "\u0427\u0442\u043E \u0441\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C? ", selectedDate)));
+  }, selectedDate ? /*#__PURE__*/react.createElement("p", null, "\u0427\u0442\u043E \u0441\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C? ", selectedDate) : /*#__PURE__*/react.createElement("p", null, "\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F \u043E \u0442\u0430\u0439\u043C\u043B\u0430\u0439\u043D\u0435")));
 };
 
 /* harmony default export */ const timeline = (Timeline);
@@ -1076,7 +1064,7 @@ function quiz_component_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr
 
 
 
-var quiz_component_SurveyComponent = function SurveyComponent() {
+var QuizComponent = function QuizComponent() {
   var _useState = (0,react.useState)([{
     question: 'Вопрос 1',
     options: ['Вариант 1', 'Вариант 2', 'Вариант 3'],
@@ -1179,7 +1167,7 @@ var quiz_component_SurveyComponent = function SurveyComponent() {
   })))));
 };
 
-/* harmony default export */ const quiz_component = (quiz_component_SurveyComponent);
+/* harmony default export */ const quiz_component = (QuizComponent);
 ;// CONCATENATED MODULE: ./src/index.js
 
 
