@@ -536,7 +536,7 @@ var Timeline = function Timeline() {
   };
 
   var calculateOffset = function calculateOffset(index) {
-    return index * 20; // Здесь можно настроить размер смещения
+    return index * 70; // Здесь можно настроить размер смещения
   };
 
   return /*#__PURE__*/react.createElement("div", {
@@ -544,248 +544,120 @@ var Timeline = function Timeline() {
   }, /*#__PURE__*/react.createElement("ul", {
     className: "dates"
   }, /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 1679 ? 'active' : '',
+    className: selectedYear === 1670 ? 'active' : '',
     onClick: function onClick() {
-      return handleDateClick('Готфрид Вильгельм Лейбниц разработал первую в мире двоичную систему счисления', 1679);
+      return handleDateClick('— 1679 — Готфрид Вильгельм Лейбниц разработал первую в мире двоичную систему счисления', 1670);
     },
     style: {
       marginLeft: calculateOffset(0)
     }
-  }, "1679"), /*#__PURE__*/react.createElement("li", {
+  }, "1670-\u044B\u0435"), /*#__PURE__*/react.createElement("li", {
     className: selectedYear === 1755 ? 'active' : '',
     onClick: function onClick() {
-      return handleDateClick('Сэмюэл Джонсон написал книгу, объясняющую двоичную систему в более широкой перспективе', 1755);
+      return handleDateClick('— 1755 — Сэмюэл Джонсон написал книгу, объясняющую двоичную систему в более широкой перспективе', 1755);
     },
     style: {
       marginLeft: calculateOffset(1)
     }
-  }, "1755"), /*#__PURE__*/react.createElement("li", {
+  }, "1750-\u044B\u0435"), /*#__PURE__*/react.createElement("li", {
     className: selectedYear === 1847 ? 'active' : '',
     onClick: function onClick() {
-      return handleDateClick('Джордж Буль ввел булеву алгебру. Теория булевой алгебры сыграла огромную роль в открытии математической логики, используемой сегодня при оцифровке.', 1847);
+      return handleDateClick('— 1947 — Джордж Буль ввел булеву алгебру. Теория булевой алгебры сыграла огромную роль в открытии математической логики, используемой сегодня при оцифровке.', 1847);
     },
     style: {
       marginLeft: calculateOffset(2)
     }
-  }, "1847"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 1938 ? 'active' : '',
+  }, "1840-\u044B\u0435"), /*#__PURE__*/react.createElement("li", {
+    className: selectedYear === 1930 ? 'active' : '',
     onClick: function onClick() {
-      return handleDateClick('Алек Ривз продолжил свои исследования бинарного языка и способов его оцифровки. Алек открыл технологию PCM (импульсно-кодовая модуляция), которая обеспечивает эффективные и успешные голосовые вызовы в телекоммуникационной отрасли', 1938);
+      return handleDateClick('— 1938 — Алек Ривз продолжил свои исследования бинарного языка и способов его оцифровки. Алек открыл технологию PCM (импульсно-кодовая модуляция), которая обеспечивает эффективные и успешные голосовые вызовы в телекоммуникационной отрасли', 1930);
     },
     style: {
       marginLeft: calculateOffset(3)
     }
-  }, "1938"), /*#__PURE__*/react.createElement("li", {
+  }, "1930-\u044B\u0435"), /*#__PURE__*/react.createElement("li", {
     className: selectedYear === 1940 ? 'active' : '',
     onClick: function onClick() {
-      return handleDateClick('Джон В. Атанасофф подготовил статью «Вычислительная машина для решения больших систем линейных алгебраических уравнений», в которой представил и подробно описал цифровую вычислительную машину', 1940);
+      return handleDateClick('— 1940 — Джон В. Атанасофф подготовил статью «Вычислительная машина для решения больших систем линейных алгебраических уравнений», в которой представил и подробно описал цифровую вычислительную машину; — 1943 — Была открыта первая в мире технология цифровой передачи голоса, известная как SIGSALY. Эта технология использовалась, особенно войсками, для тайной и эффективной связи с другими союзниками во время Второй мировой войны; — 1945 — Первый отчет о EDVAC был выпущен его разработчикам 25 июня 1945 года. EDVAC — один из самых ранних цифровых компьютеров, который проложил путь к изобретению других цифровых компьютеров.', 1940);
     },
     style: {
       marginLeft: calculateOffset(4)
     }
-  }, "1940"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 1943 ? 'active' : '',
+  }, "1940-\u044B\u0435"), /*#__PURE__*/react.createElement("li", {
+    className: selectedYear === 1954 ? 'active' : '',
     onClick: function onClick() {
-      return handleDateClick('Была открыта первая в мире технология цифровой передачи голоса, известная как SIGSALY. Эта технология использовалась, особенно войсками, для тайной и эффективной связи с другими союзниками во время Второй мировой войны', 1943);
+      return handleDateClick('— 1954 — General Electric официально выпустила первый компьютер UNIVAC 1. Компьютер UNIVAC был первой в истории системой, которая внедрила систему расчета заработной платы в свои операции в Соединенных Штатах; — 1955 — Компания по взаимному страхованию жизни Джона Хэнкока добилась огромного успеха, оцифровав более шестисот мегабайт информации от двух миллионов пользователей, имевших страховые полисы; — 1956 — IBM объявила о выпуске первого в истории дискового накопителя. Эти устройства хранения данных позволяли пользователям свободно получать доступ к хранящимся на диске данным', 1954);
     },
     style: {
       marginLeft: calculateOffset(5)
     }
-  }, "1943"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 1945 ? 'active' : '',
+  }, "1950-\u044B\u0435"), /*#__PURE__*/react.createElement("li", {
+    className: selectedYear === 1960 ? 'active' : '',
     onClick: function onClick() {
-      return handleDateClick('Первый отчет о EDVAC был выпущен его разработчикам 25 июня 1945 года. EDVAC — один из самых ранних цифровых компьютеров, который проложил путь к изобретению других цифровых компьютеров', 1945);
+      return handleDateClick('— 1960 — American Airlines в 1960 году запустила свою систему бронирования авиабилетов Sabre, которая обрабатывала 84 000 телефонных звонков в день и хранила 807 мегабайт информации о бронировании, расписании рейсов и инвентаре мест; — 1968 — Библиотеки США начали использовать записи машиночитаемой каталогизации (MARC); — 1969 — CCD (ПЗС-матрица) было официально запущено Уиллардом Бойлом и Джорджем Смитом. Они вели исследования в области видеотелефонии и так называемой «полупроводниковой пузырьковой памяти»', 1960);
     },
     style: {
       marginLeft: calculateOffset(6)
     }
-  }, "1945"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 1954 ? 'active' : '',
+  }, "1960-\u044B\u0435"), /*#__PURE__*/react.createElement("li", {
+    className: selectedYear === 1970 ? 'active' : '',
     onClick: function onClick() {
-      return handleDateClick('General Electric официально выпустила первый компьютер UNIVAC 1. Компьютер UNIVAC был первой в истории системой, которая внедрила систему расчета заработной платы в свои операции в Соединенных Штатах', 1954);
+      return handleDateClick('— 1970 — Pulsar — первые в мире часы с цифровым дисплеем и первая цифровая камера; — 1971 — Запущен проект «Гутенберг» с целью сделать произведения, не защищенные авторским правом, электронно доступными для всех; — 1979 — FedEx запустила свою онлайн-систему управления клиентами, операциями и услугами «COSMOS».', 1970);
     },
     style: {
       marginLeft: calculateOffset(7)
     }
-  }, "1954"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 1955 ? 'active' : '',
+  }, "1970-\u044B\u0435"), /*#__PURE__*/react.createElement("li", {
+    className: selectedYear === 1982 ? 'active' : '',
     onClick: function onClick() {
-      return handleDateClick('Компания по взаимному страхованию жизни Джона Хэнкока добилась огромного успеха, оцифровав более шестисот мегабайт информации от двух миллионов пользователей, имевших страховые полисы', 1955);
+      return handleDateClick('— 1982 — Выпущен первый в истории компакт-диск; — 1984 — Впервые Бюро переписи населения США опросило респондентов об использовании ими компьютера дома. В то время 8% всех домохозяйств США владели персональным компьютером.', 1982);
     },
     style: {
       marginLeft: calculateOffset(8)
     }
-  }, "1955"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 1956 ? 'active' : '',
+  }, "1980-\u044B\u0435"), /*#__PURE__*/react.createElement("li", {
+    className: selectedYear === 1991 ? 'active' : '',
     onClick: function onClick() {
-      return handleDateClick('IBM объявила о выпуске первого в истории дискового накопителя. Эти устройства хранения данных позволяли пользователям свободно получать доступ к хранящимся на диске данным', 1956);
+      return handleDateClick('— 1991 — В Финляндии была запущена первая сотовая сеть 2G; — 1994 — В ходе первой в истории e-commerce транзакции была онлайн заказана большая пицца с пепперони, грибами и дополнительным сыром в Pizza Hut.', 1991);
     },
     style: {
       marginLeft: calculateOffset(9)
     }
-  }, "1956"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 1960 ? 'active' : '',
+  }, "1990-\u044B\u0435"), /*#__PURE__*/react.createElement("li", {
+    className: selectedYear === 2001 ? 'active' : '',
     onClick: function onClick() {
-      return handleDateClick('American Airlines в 1960 году запустила свою систему бронирования авиабилетов Sabre, которая обрабатывала 84 000 телефонных звонков в день и хранила 807 мегабайт информации о бронировании, расписании рейсов и инвентаре мест', 1960);
+      return handleDateClick('— 2001 — Электронный код продукта (EPC) определен в Массачусетском технологическом институте как замена универсального кода продукта (UPC или «штрих-код»); — 2003 — Впервые электронные платежи превзошли наличные и чеки в качестве предпочтительного способа оплаты для потребителей США. Этому способствовала растущая популярность дебетовых карт в качестве способа оплаты; — 2004 — В США впервые продано больше цифровых фотоаппаратов, чем традиционных пленочных. Google объявляет о сотрудничестве с библиотеками Гарварда, Стэнфорда, Мичиганского университета и Оксфордского университета, а также Нью-Йоркской публичной библиотекой по цифровому сканированию книг из их коллекций; — 2007 — 94% мировых хранилищ информации являются цифровыми, что полностью отличается от 1986 года, когда 99,2% всех хранилищ были аналоговыми. Эстония становится первой в мире страной, использующей интернет-голосование на парламентских выборах;— 2007 — iTunes продает больше музыки, чем Walmart. Сатоши Накамото публикует «Биткоин: одноранговая электронная кассовая система», описывающую первую децентрализованную цифровую валюту. В октябре 2015 года The Economist заявил, что блокчейн, технология, лежащая в основе биткоина, «может изменить то, как работает экономика».', 2001);
     },
     style: {
       marginLeft: calculateOffset(10)
     }
-  }, "1960"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 1968 ? 'active' : '',
+  }, "2000-\u044B\u0435"), /*#__PURE__*/react.createElement("li", {
+    className: selectedYear === 2010 ? 'active' : '',
     onClick: function onClick() {
-      return handleDateClick('Библиотеки США начали использовать записи машиночитаемой каталогизации (MARC)', 1968);
+      return handleDateClick( /*#__PURE__*/react.createElement("div", {
+        style: {
+          whiteSpace: 'pre-line'
+        }
+      }, "\u2014 2010 \u2014 \u041E\u043D\u043B\u0430\u0439\u043D-\u0440\u0435\u043A\u043B\u0430\u043C\u0430 (26 \u043C\u0438\u043B\u043B\u0438\u0430\u0440\u0434\u043E\u0432 \u0434\u043E\u043B\u043B\u0430\u0440\u043E\u0432) \u0432 \u0421\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u043D\u044B\u0445 \u0428\u0442\u0430\u0442\u0430\u0445 \u0432\u043F\u0435\u0440\u0432\u044B\u0435 \u043F\u0440\u0435\u0432\u0437\u043E\u0448\u043B\u0430 \u0433\u0430\u0437\u0435\u0442\u043D\u0443\u044E \u0440\u0435\u043A\u043B\u0430\u043C\u0443 (22,8 \u043C\u0438\u043B\u043B\u0438\u0430\u0440\u0434\u0430 \u0434\u043E\u043B\u043B\u0430\u0440\u043E\u0432). ", /*#__PURE__*/react.createElement("br", null), "\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u043E \u0446\u0438\u0444\u0440\u043E\u0432\u044B\u0445 \u043A\u0430\u043C\u0435\u0440 \u0434\u043E\u0441\u0442\u0438\u0433\u043B\u043E \u043F\u0438\u043A\u0430 \u2014 \u0447\u0443\u0442\u044C \u0431\u043E\u043B\u0435\u0435 120 \u043C\u0438\u043B\u043B\u0438\u043E\u043D\u043E\u0432 \u0448\u0442\u0443\u043A, \u043F\u043E\u0441\u043A\u043E\u043B\u044C\u043A\u0443 \u0438\u0445 \u0437\u0430\u043C\u0435\u043D\u044F\u044E\u0442 \u0441\u043C\u0430\u0440\u0442\u0444\u043E\u043D\u044B;", /*#__PURE__*/react.createElement("br", null), /*#__PURE__*/react.createElement("br", null), "\u2014 2011 \u2014 \u041F\u043E\u0441\u0435\u0442\u0438\u0442\u0435\u043B\u0438 Amazon.com \u043F\u043E\u043A\u0443\u043F\u0430\u044E\u0442 \u0431\u043E\u043B\u044C\u0448\u0435 \u043A\u043D\u0438\u0433 \u0434\u043B\u044F Kindle, \u0447\u0435\u043C \u043F\u0435\u0447\u0430\u0442\u043D\u044B\u0445 \u043A\u043D\u0438\u0433;", /*#__PURE__*/react.createElement("br", null), /*#__PURE__*/react.createElement("br", null), "\u2014 2012 \u2014 \u0412\u043F\u0435\u0440\u0432\u044B\u0435 \u043F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u0438 \u0432 \u0421\u0428\u0410 \u043F\u043B\u0430\u0442\u044F\u0442 \u0437\u0430 \u043E\u043D\u043B\u0430\u0439\u043D-\u0444\u0438\u043B\u044C\u043C\u044B \u0431\u043E\u043B\u044C\u0448\u0435, \u0447\u0435\u043C \u0437\u0430 DVD \u0438 Blu-ray \u0434\u0438\u0441\u043A\u0438. 180 \u043F\u0435\u0442\u0430\u0431\u0430\u0439\u0442 (180 \u043C\u0438\u043B\u043B\u0438\u043E\u043D\u043E\u0432 \u0433\u0438\u0433\u0430\u0431\u0430\u0439\u0442) \u0435\u0436\u0435\u0433\u043E\u0434\u043D\u043E \u0434\u043E\u0431\u0430\u0432\u043B\u044F\u044E\u0442\u0441\u044F \u0432 \u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0435 \u0434\u0430\u043D\u043D\u044B\u0445 Facebook, \u043A\u043E\u0442\u043E\u0440\u043E\u0435 \u0437\u0430 \u0447\u0435\u0442\u044B\u0440\u0435 \u0433\u043E\u0434\u0430 \u0432\u044B\u0440\u043E\u0441\u043B\u043E \u0432 2500 \u0440\u0430\u0437. \u0413\u043E\u0434\u043E\u0432\u043E\u0439 \u043E\u0431\u044A\u0435\u043C \u043F\u0440\u043E\u0434\u0430\u0436 \u044D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u043D\u043E\u0439 \u043A\u043E\u043C\u043C\u0435\u0440\u0446\u0438\u0438 \u0432\u043F\u0435\u0440\u0432\u044B\u0435 \u043F\u0440\u0435\u0432\u044B\u0441\u0438\u043B 1 \u0442\u0440\u043B\u043D \u0434\u043E\u043B\u043B\u0430\u0440\u043E\u0432 \u043F\u043E \u0432\u0441\u0435\u043C\u0443 \u043C\u0438\u0440\u0443;", /*#__PURE__*/react.createElement("br", null), /*#__PURE__*/react.createElement("br", null), "\u2014 2014 \u2014 \u0427\u0438\u0441\u043B\u043E \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439 \u0418\u043D\u0442\u0435\u0440\u043D\u0435\u0442\u0430 \u043F\u043E \u0432\u0441\u0435\u043C\u0443 \u043C\u0438\u0440\u0443 \u0434\u043E\u0441\u0442\u0438\u0433\u0430\u0435\u0442 3 \u043C\u0438\u043B\u043B\u0438\u0430\u0440\u0434\u043E\u0432; ", /*#__PURE__*/react.createElement("br", null), /*#__PURE__*/react.createElement("br", null), "\u0414\u043E\u0445\u043E\u0434\u044B \u043E\u0442 \u043F\u043E\u0442\u043E\u043A\u043E\u0432\u043E\u0439 \u043F\u0435\u0440\u0435\u0434\u0430\u0447\u0438 \u043E\u0442 \u0442\u0430\u043A\u0438\u0445 \u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432, \u043A\u0430\u043A Spotify, \u0432\u043F\u0435\u0440\u0432\u044B\u0435 \u043F\u0440\u0435\u0432\u044B\u0441\u0438\u043B\u0438 \u043F\u0440\u043E\u0434\u0430\u0436\u0438 \u043A\u043E\u043C\u043F\u0430\u043A\u0442-\u0434\u0438\u0441\u043A\u043E\u0432;", /*#__PURE__*/react.createElement("br", null), /*#__PURE__*/react.createElement("br", null), "\u2014 2015 \u2014 \u041C\u0430\u0439\u043A\u043B \u0421\u0442\u043E\u0443\u043D\u0431\u0440\u0435\u0439\u043A\u0435\u0440 \u0443\u0434\u043E\u0441\u0442\u043E\u0435\u043D \u043F\u0440\u0435\u043C\u0438\u0438 \u0422\u044C\u044E\u0440\u0438\u043D\u0433\u0430 \u0437\u0430 \u0444\u0443\u043D\u0434\u0430\u043C\u0435\u043D\u0442\u0430\u043B\u044C\u043D\u044B\u0439 \u0432\u043A\u043B\u0430\u0434 \u0432 \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0438 \u0438 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438, \u043B\u0435\u0436\u0430\u0449\u0438\u0435 \u0432 \u043E\u0441\u043D\u043E\u0432\u0435 \u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0445 \u0441\u0438\u0441\u0442\u0435\u043C \u0431\u0430\u0437 \u0434\u0430\u043D\u043D\u044B\u0445."), 2010);
     },
     style: {
       marginLeft: calculateOffset(11)
     }
-  }, "1968"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 1969 ? 'active' : '',
-    onClick: function onClick() {
-      return handleDateClick('CCD (ПЗС-матрица) было официально запущено Уиллардом Бойлом и Джорджем Смитом. Они вели исследования в области видеотелефонии и так называемой «полупроводниковой пузырьковой памяти»', 1969);
-    },
-    style: {
-      marginLeft: calculateOffset(12)
-    }
-  }, "1969"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 1970 ? 'active' : '',
-    onClick: function onClick() {
-      return handleDateClick('Pulsar — первые в мире часы с цифровым дисплеем и первая цифровая камера', 1970);
-    },
-    style: {
-      marginLeft: calculateOffset(13)
-    }
-  }, "1970"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 1971 ? 'active' : '',
-    onClick: function onClick() {
-      return handleDateClick('Запущен проект «Гутенберг» с целью сделать произведения, не защищенные авторским правом, электронно доступными для всех', 1971);
-    },
-    style: {
-      marginLeft: calculateOffset(14)
-    }
-  }, "1971"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 1979 ? 'active' : '',
-    onClick: function onClick() {
-      return handleDateClick('FedEx запустила свою онлайн-систему управления клиентами, операциями и услугами «COSMOS»', 1979);
-    },
-    style: {
-      marginLeft: calculateOffset(15)
-    }
-  }, "1979"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 1982 ? 'active' : '',
-    onClick: function onClick() {
-      return handleDateClick('Выпущен первый в истории компакт-диск', 1982);
-    },
-    style: {
-      marginLeft: calculateOffset(16)
-    }
-  }, "1982"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 1984 ? 'active' : '',
-    onClick: function onClick() {
-      return handleDateClick('Впервые Бюро переписи населения США опросило респондентов об использовании ими компьютера дома. В то время 8% всех домохозяйств США владели персональным компьютером', 1984);
-    },
-    style: {
-      marginLeft: calculateOffset(17)
-    }
-  }, "1984"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 1991 ? 'active' : '',
-    onClick: function onClick() {
-      return handleDateClick('В Финляндии была запущена первая сотовая сеть 2G', 1991);
-    },
-    style: {
-      marginLeft: calculateOffset(18)
-    }
-  }, "1991"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 1994 ? 'active' : '',
-    onClick: function onClick() {
-      return handleDateClick('В ходе первой в истории e-commerce транзакции была онлайн заказана большая пицца с пепперони, грибами и дополнительным сыром в Pizza Hut', 1994);
-    },
-    style: {
-      marginLeft: calculateOffset(19)
-    }
-  }, "1994"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 2001 ? 'active' : '',
-    onClick: function onClick() {
-      return handleDateClick('Электронный код продукта (EPC) определен в Массачусетском технологическом институте как замена универсального кода продукта (UPC или «штрих-код»)', 2001);
-    },
-    style: {
-      marginLeft: calculateOffset(20)
-    }
-  }, "2001"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 2003 ? 'active' : '',
-    onClick: function onClick() {
-      return handleDateClick('Впервые электронные платежи превзошли наличные и чеки в качестве предпочтительного способа оплаты для потребителей США. Этому способствовала растущая популярность дебетовых карт в качестве способа оплаты', 2003);
-    },
-    style: {
-      marginLeft: calculateOffset(21)
-    }
-  }, "2003"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 2004 ? 'active' : '',
-    onClick: function onClick() {
-      return handleDateClick('В США впервые продано больше цифровых фотоаппаратов, чем традиционных пленочных. Google объявляет о сотрудничестве с библиотеками Гарварда, Стэнфорда, Мичиганского университета и Оксфордского университета, а также Нью-Йоркской публичной библиотекой по цифровому сканированию книг из их коллекций', 2004);
-    },
-    style: {
-      marginLeft: calculateOffset(22)
-    }
-  }, "2004"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 2007 ? 'active' : '',
-    onClick: function onClick() {
-      return handleDateClick('94% мировых хранилищ информации являются цифровыми, что полностью отличается от 1986 года, когда 99,2% всех хранилищ были аналоговыми. Эстония становится первой в мире страной, использующей интернет-голосование на парламентских выборах.', 2007);
-    },
-    style: {
-      marginLeft: calculateOffset(23)
-    }
-  }, "2007"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 2008 ? 'active' : '',
-    onClick: function onClick() {
-      return handleDateClick('iTunes продает больше музыки, чем Walmart. Сатоши Накамото публикует «Биткоин: одноранговая электронная кассовая система», описывающую первую децентрализованную цифровую валюту. В октябре 2015 года The Economist заявил, что блокчейн, технология, лежащая в основе биткоина, «может изменить то, как работает экономика».', 2008);
-    },
-    style: {
-      marginLeft: calculateOffset(24)
-    }
-  }, "2008"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 2010 ? 'active' : '',
-    onClick: function onClick() {
-      return handleDateClick('Онлайн-реклама (26 миллиардов долларов) в Соединенных Штатах впервые превзошла газетную рекламу (22,8 миллиарда долларов). Производство цифровых камер достигло пика — чуть более 120 миллионов штук, поскольку их заменяют смартфоны.', 2010);
-    },
-    style: {
-      marginLeft: calculateOffset(25)
-    }
-  }, "2010"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 2011 ? 'active' : '',
-    onClick: function onClick() {
-      return handleDateClick('Посетители Amazon.com покупают больше книг для Kindle, чем печатных книг', 2011);
-    },
-    style: {
-      marginLeft: calculateOffset(26)
-    }
-  }, "2011"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 2012 ? 'active' : '',
-    onClick: function onClick() {
-      return handleDateClick('Впервые потребители в США платят за онлайн-фильмы больше, чем за DVD и Blu-ray диски. 180 петабайт (180 миллионов гигабайт) ежегодно добавляются в хранилище данных Facebook, которое за четыре года выросло в 2500 раз. Годовой объем продаж электронной коммерции впервые превысил 1 трлн долларов по всему миру.', 2012);
-    },
-    style: {
-      marginLeft: calculateOffset(27)
-    }
-  }, "2012"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 2014 ? 'active' : '',
-    onClick: function onClick() {
-      return handleDateClick('Число пользователей Интернета по всему миру достигает 3 миллиардов. Доходы от потоковой передачи от таких сервисов, как Spotify, впервые превысили продажи компакт-дисков', 2014);
-    },
-    style: {
-      marginLeft: calculateOffset(28)
-    }
-  }, "2014"), /*#__PURE__*/react.createElement("li", {
-    className: selectedYear === 2015 ? 'active' : '',
-    onClick: function onClick() {
-      return handleDateClick('Майкл Стоунбрейкер удостоен премии Тьюринга за фундаментальный вклад в концепции и практики, лежащие в основе современных систем баз данных', 2015);
-    },
-    style: {
-      marginLeft: calculateOffset(29)
-    }
-  }, "2015")), /*#__PURE__*/react.createElement("div", {
+  }, "2010-\u044B\u0435")), /*#__PURE__*/react.createElement("div", {
     className: "details"
-  }, selectedDate ? /*#__PURE__*/react.createElement("p", null, "\u0427\u0442\u043E \u0441\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C? ", selectedDate) : /*#__PURE__*/react.createElement("p", null, "\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F \u043E \u0442\u0430\u0439\u043C\u043B\u0430\u0439\u043D\u0435")));
+  }, selectedDate ? /*#__PURE__*/react.createElement("div", {
+    className: "M_TextTimeline"
+  }, /*#__PURE__*/react.createElement("h2", {
+    className: "A_HeaderTwo"
+  }, " \xAB\u0427\u0442\u043E \u0441\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C? "), /*#__PURE__*/react.createElement("p", {
+    className: "A_Paragraph"
+  }, selectedDate)) : /*#__PURE__*/react.createElement("div", {
+    className: "M_TextTimeline"
+  }, /*#__PURE__*/react.createElement("h2", {
+    className: "A_HeaderTwo"
+  }, " \u0418\u0441\u0442\u043E\u0440\u0438\u044F \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044F \u0446\u0438\u0444\u0440\u043E\u0432\u044B\u0445 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u043E\u0432 "), /*#__PURE__*/react.createElement("p", {
+    className: "A_Paragraph"
+  }, "\u0422\u0430\u0439\u043C\u043B\u0430\u0439\u043D \u043F\u043E\u043C\u043E\u0433\u0430\u0435\u0442 \u043F\u043E\u043D\u044F\u0442\u044C \u0438\u0441\u0442\u043E\u0440\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u043A\u043E\u043D\u0442\u0435\u043A\u0441\u0442 \u0438\xA0\u043F\u0440\u043E\u0433\u0440\u0435\u0441\u0441, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u0441\u0434\u0435\u043B\u0430\u043B\u0438 \u0446\u0438\u0444\u0440\u043E\u0432\u044B\u0435 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u044B \u043D\u0430\xA0\u043F\u0440\u043E\u0442\u044F\u0436\u0435\u043D\u0438\u0438 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0445 \u0434\u0435\u0441\u044F\u0442\u0438\u043B\u0435\u0442\u0438\u0439. \u041E\u043D\xA0\u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u043D\u0430\u043C \u043E\u0446\u0435\u043D\u0438\u0442\u044C \u0432\u0430\u0436\u043D\u043E\u0441\u0442\u044C \u0438\xA0\u0432\u043B\u0438\u044F\u043D\u0438\u0435 \u043A\u0430\u0436\u0434\u043E\u0433\u043E \u044D\u0442\u0430\u043F\u0430 \u043D\u0430\xA0\u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u0443\u044E \u0446\u0438\u0444\u0440\u043E\u0432\u0443\u044E \u044D\u043F\u043E\u0445\u0443 \u0438\xA0\u043F\u043E\u043D\u044F\u0442\u044C, \u043A\u0430\u043A\u0438\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u0438\xA0\u0438\u043D\u043D\u043E\u0432\u0430\u0446\u0438\u0438 \u0441\u0444\u043E\u0440\u043C\u0438\u0440\u043E\u0432\u0430\u043B\u0438 \u0441\u0435\u0433\u043E\u0434\u043D\u044F\u0448\u043D\u0438\u0439 \u043B\u0430\u043D\u0434\u0448\u0430\u0444\u0442 \u0446\u0438\u0444\u0440\u043E\u0432\u044B\u0445 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u043E\u0432."))));
 };
 
 /* harmony default export */ const timeline = (Timeline);
@@ -1064,19 +936,31 @@ function quiz_component_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr
 
 
 
-var QuizComponent = function QuizComponent() {
+var QuizCusDevComponent = function QuizCusDevComponent() {
   var _useState = (0,react.useState)([{
-    question: 'Вопрос 1',
-    options: ['Вариант 1', 'Вариант 2', 'Вариант 3'],
+    question: 'Начнем с главного, что такое цифровой продукт?',
+    options: ['Продукт, созданный с использованием технологий цифровой обработки данных', 'Продукт, доступный только в электронном формате', 'Продукт, предназначенный для использования на цифровых устройствах'],
     correctOption: 0
   }, {
-    question: 'Вопрос 2',
-    options: ['Вариант 1', 'Вариант 2', 'Вариант 3'],
+    question: 'Какие основные преимущества у цифровых продуктов?',
+    options: ['Быстрая и удобная доставка', 'Возможность персонализации', 'Низкая стоимость производства'],
     correctOption: 1
   }, {
-    question: 'Вопрос 3',
-    options: ['Вариант 1', 'Вариант 2', 'Вариант 3'],
-    correctOption: 2
+    question: 'Что такое UX-дизайн в цифровых продуктах?',
+    options: ['Дизайн пользовательского интерфейса', 'Дизайн опыта пользователя', 'Дизайн взаимодействия'],
+    correctOption: 1
+  }, {
+    question: 'Что означает термин «мобильный оптимизм»?',
+    options: ['Оптимизация цифрового продукта для использования на мобильных устройствах', 'Уверенность в развитии мобильных технологий', 'Поддержка мобильных платформ разработкой цифрового продукта'],
+    correctOption: 0
+  }, {
+    question: 'Что такое MVP в контексте цифровых продуктов?',
+    options: ['Минимально возможный продукт', 'Наиболее ценный продукт', 'Максимально выгодный продукт'],
+    correctOption: 0
+  }, {
+    question: 'Что такое A/B-тестирование в цифровых продуктах?',
+    options: ['Тестирование продукта на разных аудиториях', 'Тестирование двух разных версий продукта', 'Тестирование продукта на разных платформах'],
+    correctOption: 1
   }]),
       _useState2 = quiz_component_slicedToArray(_useState, 2),
       questions = _useState2[0],
@@ -1087,10 +971,10 @@ var QuizComponent = function QuizComponent() {
       selectedOptions = _useState4[0],
       setSelectedOptions = _useState4[1];
 
-  var _useState5 = (0,react.useState)(0),
+  var _useState5 = (0,react.useState)(-1),
       _useState6 = quiz_component_slicedToArray(_useState5, 2),
-      currentQuestion = _useState6[0],
-      setCurrentQuestion = _useState6[1];
+      currentQuestionIndex = _useState6[0],
+      setCurrentQuestionIndex = _useState6[1];
 
   var _useState7 = (0,react.useState)(false),
       _useState8 = quiz_component_slicedToArray(_useState7, 2),
@@ -1121,54 +1005,484 @@ var QuizComponent = function QuizComponent() {
   };
 
   var handleNextQuestion = function handleNextQuestion() {
-    setCurrentQuestion(function (prevCurrentQuestion) {
-      return prevCurrentQuestion + 1;
+    setCurrentQuestionIndex(function (prevCurrentQuestionIndex) {
+      return prevCurrentQuestionIndex + 1;
     });
   };
 
-  var progressBarWidth = (currentQuestion + 1) / questions.length * 100;
+  var handleStartSurvey = function handleStartSurvey() {
+    setCurrentQuestionIndex(0);
+  };
+
+  var getProgressPercentage = function getProgressPercentage() {
+    return Math.floor(currentQuestionIndex / questions.length * 100);
+  };
+
   var correctAnswersPercentage = (questions.length - incorrectAnswers.length) / questions.length * 100;
   var resultMessage = '';
 
   if (correctAnswersPercentage === 100) {
-    resultMessage = 'Поздравляем! Вы отлично знаете материалы!';
+    resultMessage = 'Поздравляем! Вы отлично знаете материалы! Ваши знания о цифровых продуктах на высоком уровне. Продолжайте в том же духе и не останавливайтесь на достигнутом!';
   } else if (correctAnswersPercentage >= 70) {
-    resultMessage = 'Хороший результат! Продолжайте в том же духе!';
+    resultMessage = 'Хороший результат! Ваши знания о цифровых продуктах достаточно хорошие. Однако всегда есть место для улучшения. Рекомендуем изучить тему более подробно, чтобы стать настоящим экспертом.';
   } else if (correctAnswersPercentage >= 40) {
-    resultMessage = 'Вы еще мало знаете, стоит почитать подробнее.';
+    resultMessage = 'Вы еще мало знаете о цифровых продуктах. Рекомендуем почитать подробнее о различных аспектах и принципах их создания. Внимательное изучение материалов поможет вам повысить свои знания и навыки в этой области.';
   } else {
-    resultMessage = 'Упс! Вам нужно больше практики и изучения.';
+    resultMessage = 'Упс! Ваши знания о цифровых продуктах требуют значительного улучшения. Не отчаивайтесь! Существует множество ресурсов, где вы можете узнать больше о цифровых продуктах. Рекомендуем начать с основ и постепенно расширять свои знания.';
   }
 
   return /*#__PURE__*/react.createElement("div", {
+    className: "O_QuestionBlock"
+  }, currentQuestionIndex === -1 ? /*#__PURE__*/react.createElement("div", {
     className: "M_StartCard"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "progress-bar",
-    style: {
-      width: "".concat(progressBarWidth, "%")
-    }
-  }), !showResults && /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("h3", null, "\u0412\u043E\u043F\u0440\u043E\u0441 ", currentQuestion + 1), /*#__PURE__*/react.createElement("h2", {
+  }, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", {
+    className: "A_ProgressBar"
+  }, /*#__PURE__*/react.createElement("progress", {
+    value: getProgressPercentage(),
+    max: 100
+  })), /*#__PURE__*/react.createElement("h3", null, "8 \u0432\u043E\u043F\u0440\u043E\u0441\u043E\u0432"), /*#__PURE__*/react.createElement("h2", {
     className: "A_HeaderTwo"
-  }, questions[currentQuestion].question), questions[currentQuestion].options.map(function (option, index) {
-    return /*#__PURE__*/react.createElement("button", {
-      key: index,
+  }, "   \u0422\u0435\u0441\u0442 \u043D\u0430 \u0437\u043D\u0430\u043D\u0438\u0435 \u0446\u0438\u0444\u0440\u043E\u0432\u044B\u0445 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u043E\u0432   ")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", {
+    className: "A_ExpText"
+  }, /*#__PURE__*/react.createElement("p", {
+    className: "A_Paragraph"
+  }, "\u042D\u0442\u043E\u0442 \u0442\u0435\u0441\u0442 \u043F\u0440\u0435\u0434\u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D \u0434\u043B\u044F \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0438 \u0432\u0430\u0448\u0438\u0445 \u0437\u043D\u0430\u043D\u0438\u0439 \u043E\xA0\u0446\u0438\u0444\u0440\u043E\u0432\u044B\u0445 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u0430\u0445. \u0426\u0438\u0444\u0440\u043E\u0432\u044B\u0435 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u044B \u0441\u0442\u0430\u043B\u0438 \u043D\u0435\u043E\u0442\u044A\u0435\u043C\u043B\u0435\u043C\u043E\u0439 \u0447\u0430\u0441\u0442\u044C\u044E \u043D\u0430\u0448\u0435\u0439 \u0436\u0438\u0437\u043D\u0438, \u0438\xA0\u043F\u043E\u043D\u0438\u043C\u0430\u043D\u0438\u0435 \u0438\u0445\xA0\u043E\u0441\u043D\u043E\u0432\u043D\u044B\u0445 \u043F\u0440\u0438\u043D\u0446\u0438\u043F\u043E\u0432 \u0438\xA0\u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u043E\u0432 \u043C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C \u043F\u043E\u043B\u0435\u0437\u043D\u043E \u0434\u043B\u044F \u0432\u0441\u0435\u0445, \u043A\u0442\u043E \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0432\xA0\u043E\u0431\u043B\u0430\u0441\u0442\u0438 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438, \u0434\u0438\u0437\u0430\u0439\u043D\u0430 \u0438\u043B\u0438 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0446\u0438\u0444\u0440\u043E\u0432\u044B\u043C\u0438 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u0430\u043C\u0438."), /*#__PURE__*/react.createElement("p", {
+    className: "A_Paragraph"
+  }, "\u0422\u0435\u0441\u0442 \u0441\u043E\u0441\u0442\u043E\u0438\u0442 \u0438\u0437\xA06\xA0\u0432\u043E\u043F\u0440\u043E\u0441\u043E\u0432, \u0433\u0434\u0435 \u0432\u0430\u043C \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u0435\u0442\u0441\u044F \u0432\u044B\u0431\u0440\u0430\u0442\u044C \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u043E\u0442\u0432\u0435\u0442 \u0438\u0437\xA0\u0442\u0440\u0435\u0445 \u0432\u0430\u0440\u0438\u0430\u043D\u0442\u043E\u0432. \u0412\u0430\u0448\u0430 \u0437\u0430\u0434\u0430\u0447\u0430\xA0\u2014 \u0432\u044B\u0431\u0440\u0430\u0442\u044C \u043D\u0430\u0438\u0431\u043E\u043B\u0435\u0435 \u0442\u043E\u0447\u043D\u044B\u0439 \u043E\u0442\u0432\u0435\u0442, \u043E\u0441\u043D\u043E\u0432\u044B\u0432\u0430\u044F\u0441\u044C \u043D\u0430\xA0\u0441\u0432\u043E\u0438\u0445 \u0437\u043D\u0430\u043D\u0438\u044F\u0445 \u0438\xA0\u043E\u043F\u044B\u0442\u0435. \u041F\u043E\u0441\u043B\u0435 \u043E\u0442\u0432\u0435\u0442\u0430 \u043D\u0430\xA0\u0432\u0441\u0435 \u0432\u043E\u043F\u0440\u043E\u0441\u044B \u0432\u044B\xA0\u043F\u043E\u043B\u0443\u0447\u0438\u0442\u0435 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u044B, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u043E\u043A\u0430\u0436\u0443\u0442 \u0432\u0430\u0448 \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u0437\u043D\u0430\u043D\u0438\u0439 \u043E\xA0\u0446\u0438\u0444\u0440\u043E\u0432\u044B\u0445 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u0430\u0445.")), /*#__PURE__*/react.createElement("button", {
+    onClick: handleStartSurvey
+  }, "\u041F\u0440\u0438\u0441\u0442\u0443\u043F\u0438\u0442\u044C \u043A \u0442\u0435\u0441\u0442\u0443 \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u0437\u043D\u0430\u043D\u0438\u044F"))) : /*#__PURE__*/react.createElement("div", null, !showResults && /*#__PURE__*/react.createElement("div", {
+    className: "M_QuestionCard"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "A_ProgressBar"
+  }, /*#__PURE__*/react.createElement("progress", {
+    value: getProgressPercentage(),
+    max: 100
+  }), /*#__PURE__*/react.createElement("h3", null, "\u0412\u043E\u043F\u0440\u043E\u0441 ", currentQuestionIndex + 1), /*#__PURE__*/react.createElement("h2", {
+    className: "A_HeaderTwo"
+  }, questions[currentQuestionIndex].question)), /*#__PURE__*/react.createElement("div", null, questions[currentQuestionIndex].options.map(function (option, index) {
+    return /*#__PURE__*/react.createElement("div", {
+      key: index
+    }, /*#__PURE__*/react.createElement("button", {
       onClick: function onClick() {
-        return handleOptionSelect(currentQuestion, {
+        return handleOptionSelect(currentQuestionIndex, {
           value: index
         });
       }
-    }, option);
-  })), showResults && /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("h3", null, "\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442"), /*#__PURE__*/react.createElement("h2", {
+    }, option));
+  }))), showResults && /*#__PURE__*/react.createElement("div", {
+    className: "M_StartCard"
+  }, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("progress", {
+    value: 100,
+    max: 100
+  }), /*#__PURE__*/react.createElement("h3", null, "\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442"), /*#__PURE__*/react.createElement("h2", {
     className: "A_HeaderTwo"
-  }, "\u041F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0445 \u043E\u0442\u0432\u0435\u0442\u043E\u0432: ", questions.length - incorrectAnswers.length, "/", questions.length), /*#__PURE__*/react.createElement("p", null, resultMessage), incorrectAnswers.length > 0 && /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("h3", null, "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0435 \u043E\u0442\u0432\u0435\u0442\u044B:"), /*#__PURE__*/react.createElement("ul", null, incorrectAnswers.map(function (index) {
-    return /*#__PURE__*/react.createElement("li", {
-      key: index
-    }, questions[index].question);
-  })))));
+  }, "\u0412\u044B \u043E\u0442\u0432\u0435\u0442\u0438\u043B\u0438 \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E \u043D\u0430 ", questions.length - incorrectAnswers.length, " \u0438\u0437 ", questions.length)), /*#__PURE__*/react.createElement("div", {
+    className: "A_ResultsBackgound"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "A_ExpText"
+  }, /*#__PURE__*/react.createElement("p", {
+    className: "A_Paragraph"
+  }, resultMessage))))));
 };
 
-/* harmony default export */ const quiz_component = (QuizComponent);
+/* harmony default export */ const quiz_component = (QuizCusDevComponent);
+;// CONCATENATED MODULE: ./src/javascript/int_modules/product_option.jsx
+function product_option_slicedToArray(arr, i) { return product_option_arrayWithHoles(arr) || product_option_iterableToArrayLimit(arr, i) || product_option_unsupportedIterableToArray(arr, i) || product_option_nonIterableRest(); }
+
+function product_option_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function product_option_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return product_option_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return product_option_arrayLikeToArray(o, minLen); }
+
+function product_option_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function product_option_iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function product_option_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+var ProductComponent = function ProductComponent() {
+  var _useState = (0,react.useState)(0),
+      _useState2 = product_option_slicedToArray(_useState, 2),
+      employeeCount = _useState2[0],
+      setEmployeeCount = _useState2[1];
+
+  var _useState3 = (0,react.useState)(0),
+      _useState4 = product_option_slicedToArray(_useState3, 2),
+      costCount = _useState4[0],
+      setCostCount = _useState4[1];
+
+  var _useState5 = (0,react.useState)(0),
+      _useState6 = product_option_slicedToArray(_useState5, 2),
+      monthsCount = _useState6[0],
+      setMonthsCount = _useState6[1];
+
+  var _useState7 = (0,react.useState)(false),
+      _useState8 = product_option_slicedToArray(_useState7, 2),
+      firstSelectionMade = _useState8[0],
+      setFirstSelectionMade = _useState8[1];
+
+  var _useState9 = (0,react.useState)(false),
+      _useState10 = product_option_slicedToArray(_useState9, 2),
+      secondSelectionMade = _useState10[0],
+      setSecondSelectionMade = _useState10[1];
+
+  var _useState11 = (0,react.useState)(false),
+      _useState12 = product_option_slicedToArray(_useState11, 2),
+      timeSelectionMade = _useState12[0],
+      setTimeSelectionMade = _useState12[1];
+
+  var _useState13 = (0,react.useState)('Продукт это'),
+      _useState14 = product_option_slicedToArray(_useState13, 2),
+      selectedOption = _useState14[0],
+      setSelectedOption = _useState14[1];
+
+  var _useState15 = (0,react.useState)('Траляля'),
+      _useState16 = product_option_slicedToArray(_useState15, 2),
+      selectedDescription = _useState16[0],
+      setSelectedDescription = _useState16[1];
+
+  var handleFirstSelection = function handleFirstSelection(option, description) {
+    if (firstSelectionMade) {
+      return;
+    }
+
+    if (option === 'мобильное приложение') {
+      setEmployeeCount(10);
+      setCostCount(5000);
+      setMonthsCount(3);
+    } else if (option === 'веб-приложение') {
+      setEmployeeCount(5);
+      setCostCount(3000);
+      setMonthsCount(2);
+    } else if (option === 'другое') {
+      setEmployeeCount(2);
+      setCostCount(1000);
+      setMonthsCount(1);
+    }
+
+    setSelectedOption(option);
+    setSelectedDescription(description);
+    setFirstSelectionMade(true);
+    setSecondSelectionMade(false);
+    setTimeSelectionMade(false);
+  };
+
+  var handleSecondSelection = function handleSecondSelection(option, description) {
+    if (!firstSelectionMade || secondSelectionMade) {
+      return;
+    }
+
+    if (option === 'простой') {
+      setEmployeeCount(employeeCount + 5);
+      setCostCount(costCount + 2000);
+      setMonthsCount(monthsCount + 1);
+    } else if (option === 'средний') {
+      setEmployeeCount(employeeCount + 10);
+      setCostCount(costCount + 4000);
+      setMonthsCount(monthsCount + 2);
+    } else if (option === 'сложный') {
+      setEmployeeCount(employeeCount + 15);
+      setCostCount(costCount + 6000);
+      setMonthsCount(monthsCount + 3);
+    }
+
+    setSelectedOption(option);
+    setSelectedDescription(description);
+    setSecondSelectionMade(true);
+    setTimeSelectionMade(false);
+  };
+
+  var handleTimeSelection = function handleTimeSelection(option, description) {
+    if (!secondSelectionMade || timeSelectionMade) {
+      return;
+    }
+
+    if (option === 'быстрые') {
+      setMonthsCount(monthsCount - 1);
+    } else if (option === 'обычные') {// No changes
+    } else if (option === 'медленные') {
+      setMonthsCount(monthsCount + 1);
+    }
+
+    setSelectedOption(option);
+    setSelectedDescription(description);
+    setTimeSelectionMade(true);
+  };
+
+  var handleRestart = function handleRestart() {
+    setEmployeeCount(0);
+    setCostCount(0);
+    setMonthsCount(0);
+    setFirstSelectionMade(false);
+    setSecondSelectionMade(false);
+    setTimeSelectionMade(false);
+    setSelectedOption('Продукт это');
+    setSelectedDescription('Траляля');
+  };
+
+  return /*#__PURE__*/react.createElement("div", {
+    className: "product_chart"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "flowchart"
+  }, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("button", {
+    onMouseEnter: function onMouseEnter() {
+      return setSelectedDescription('Мобильное приложение — описание');
+    },
+    onClick: function onClick() {
+      return handleFirstSelection('мобильное приложение', 'Мобильное приложение — описание');
+    },
+    disabled: firstSelectionMade
+  }, "\u041C\u043E\u0431\u0438\u043B\u044C\u043D\u043E\u0435 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435"), /*#__PURE__*/react.createElement("button", {
+    onMouseEnter: function onMouseEnter() {
+      return setSelectedDescription('Веб-приложение — описание');
+    },
+    onClick: function onClick() {
+      return handleFirstSelection('веб-приложение', 'Веб-приложение — описание');
+    },
+    disabled: firstSelectionMade
+  }, "\u0412\u0435\u0431-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435"), /*#__PURE__*/react.createElement("button", {
+    onMouseEnter: function onMouseEnter() {
+      return setSelectedDescription('Другое — описание');
+    },
+    onClick: function onClick() {
+      return handleFirstSelection('другое', 'Другое — описание');
+    },
+    disabled: firstSelectionMade
+  }, "\u0414\u0440\u0443\u0433\u043E\u0435")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("button", {
+    onMouseEnter: function onMouseEnter() {
+      return setSelectedDescription('Простой — описание');
+    },
+    onClick: function onClick() {
+      return handleSecondSelection('простой', 'Простой — описание');
+    },
+    disabled: !firstSelectionMade || secondSelectionMade
+  }, "\u041F\u0440\u043E\u0441\u0442\u043E\u0439"), /*#__PURE__*/react.createElement("button", {
+    onMouseEnter: function onMouseEnter() {
+      return setSelectedDescription('Средний — описание');
+    },
+    onClick: function onClick() {
+      return handleSecondSelection('средний', 'Средний — описание');
+    },
+    disabled: !firstSelectionMade || secondSelectionMade
+  }, "\u0421\u0440\u0435\u0434\u043D\u0438\u0439"), /*#__PURE__*/react.createElement("button", {
+    onMouseEnter: function onMouseEnter() {
+      return setSelectedDescription('Сложный — описание');
+    },
+    onClick: function onClick() {
+      return handleSecondSelection('сложный', 'Сложный — описание');
+    },
+    disabled: !firstSelectionMade || secondSelectionMade
+  }, "\u0421\u043B\u043E\u0436\u043D\u044B\u0439")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("button", {
+    onMouseEnter: function onMouseEnter() {
+      return setSelectedDescription('Быстрые — описание');
+    },
+    onClick: function onClick() {
+      return handleTimeSelection('быстрые', 'Быстрые — описание');
+    },
+    disabled: !secondSelectionMade || timeSelectionMade
+  }, "\u0411\u044B\u0441\u0442\u0440\u044B\u0435"), /*#__PURE__*/react.createElement("button", {
+    onMouseEnter: function onMouseEnter() {
+      return setSelectedDescription('Обычные — описание');
+    },
+    onClick: function onClick() {
+      return handleTimeSelection('обычные', 'Обычные — описание');
+    },
+    disabled: !secondSelectionMade || timeSelectionMade
+  }, "\u041E\u0431\u044B\u0447\u043D\u044B\u0435"), /*#__PURE__*/react.createElement("button", {
+    onMouseEnter: function onMouseEnter() {
+      return setSelectedDescription('Медленные — описание');
+    },
+    onClick: function onClick() {
+      return handleTimeSelection('медленные', 'Медленные — описание');
+    },
+    disabled: !secondSelectionMade || timeSelectionMade
+  }, "\u041C\u0435\u0434\u043B\u0435\u043D\u043D\u044B\u0435"))), /*#__PURE__*/react.createElement("div", {
+    className: "details"
+  }, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("span", null, "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u043A\u043E\u0432: ", employeeCount), /*#__PURE__*/react.createElement("span", null, "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0437\u0430\u0442\u0440\u0430\u0442: ", costCount), /*#__PURE__*/react.createElement("span", null, "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u043C\u0435\u0441\u044F\u0446\u0435\u0432 \u0440\u0430\u0431\u043E\u0442\u044B: ", monthsCount)), /*#__PURE__*/react.createElement("div", null, selectedOption && /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("h3", null, "\u0412\u044B\u0431\u0440\u0430\u043D\u043D\u044B\u0439 \u044D\u0442\u0430\u043F: ", selectedOption), /*#__PURE__*/react.createElement("p", null, "\u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435: ", selectedDescription)))), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("button", {
+    onClick: handleRestart
+  }, "\u041F\u0435\u0440\u0435\u0437\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C"))));
+};
+
+/* harmony default export */ const product_option = (ProductComponent);
+;// CONCATENATED MODULE: ./src/javascript/int_modules/questions_cusdev.jsx
+function questions_cusdev_toConsumableArray(arr) { return questions_cusdev_arrayWithoutHoles(arr) || questions_cusdev_iterableToArray(arr) || questions_cusdev_unsupportedIterableToArray(arr) || questions_cusdev_nonIterableSpread(); }
+
+function questions_cusdev_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function questions_cusdev_iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function questions_cusdev_arrayWithoutHoles(arr) { if (Array.isArray(arr)) return questions_cusdev_arrayLikeToArray(arr); }
+
+function questions_cusdev_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function questions_cusdev_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? questions_cusdev_ownKeys(Object(source), !0).forEach(function (key) { questions_cusdev_defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : questions_cusdev_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function questions_cusdev_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function questions_cusdev_slicedToArray(arr, i) { return questions_cusdev_arrayWithHoles(arr) || questions_cusdev_iterableToArrayLimit(arr, i) || questions_cusdev_unsupportedIterableToArray(arr, i) || questions_cusdev_nonIterableRest(); }
+
+function questions_cusdev_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function questions_cusdev_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return questions_cusdev_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return questions_cusdev_arrayLikeToArray(o, minLen); }
+
+function questions_cusdev_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function questions_cusdev_iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function questions_cusdev_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+var questions_cusdev_QuizCusDevComponent = function QuizCusDevComponent() {
+  var _useState = (0,react.useState)([{
+    question: 'Что такое «Customer Development»?',
+    options: ['Методика разработки продукта, основанная на активном участии клиентов в процессе', 'Процесс разработки клиентов для продукта', 'Маркетинговая стратегия, направленная на привлечение новых клиентов'],
+    correctOption: 0
+  }, {
+    question: 'Какова основная цель «Customer Development»?',
+    options: ['Создание продукта, который полностью удовлетворяет требованиям клиентов', 'Увеличение прибыли компании', 'Повышение узнаваемости бренда'],
+    correctOption: 0
+  }, {
+    question: 'Какие шаги включает процесс «Customer Development»?',
+    options: ['Проведение фокус-групп, разработка бизнес-плана, привлечение инвесторов', 'Изучение конкурентов, разработка маркетинговой стратегии, запуск продукта', 'Постановка гипотезы, проверка гипотезы, адаптация продукта, повторение'],
+    correctOption: 2
+  }, {
+    question: 'Какая роль у клиентов в процессе «Customer Development»?',
+    options: ['Они предоставляют финансирование для разработки продукта', 'Они только потребители продукта и не вовлечены в процесс разработки', 'Они являются активными участниками, помогая в определении требований к продукту'],
+    correctOption: 2
+  }, {
+    question: 'Какие преимущества имеет подход «Customer Development»?',
+    options: ['Увеличение срока разработки продукта ', 'Снижение риска провала продукта на рынке', 'Увеличение затрат на маркетинг и рекламу'],
+    correctOption: 1
+  }]),
+      _useState2 = questions_cusdev_slicedToArray(_useState, 2),
+      questions = _useState2[0],
+      setQuestions = _useState2[1];
+
+  var _useState3 = (0,react.useState)({}),
+      _useState4 = questions_cusdev_slicedToArray(_useState3, 2),
+      selectedOptions = _useState4[0],
+      setSelectedOptions = _useState4[1];
+
+  var _useState5 = (0,react.useState)(-1),
+      _useState6 = questions_cusdev_slicedToArray(_useState5, 2),
+      currentQuestionIndex = _useState6[0],
+      setCurrentQuestionIndex = _useState6[1];
+
+  var _useState7 = (0,react.useState)(false),
+      _useState8 = questions_cusdev_slicedToArray(_useState7, 2),
+      showResults = _useState8[0],
+      setShowResults = _useState8[1];
+
+  var _useState9 = (0,react.useState)([]),
+      _useState10 = questions_cusdev_slicedToArray(_useState9, 2),
+      incorrectAnswers = _useState10[0],
+      setIncorrectAnswers = _useState10[1];
+
+  var handleOptionSelect = function handleOptionSelect(questionIndex, option) {
+    setSelectedOptions(function (prevSelectedOptions) {
+      return questions_cusdev_objectSpread(questions_cusdev_objectSpread({}, prevSelectedOptions), {}, questions_cusdev_defineProperty({}, questionIndex, option.value));
+    });
+
+    if (option.value !== questions[questionIndex].correctOption) {
+      setIncorrectAnswers(function (prevIncorrectAnswers) {
+        return [].concat(questions_cusdev_toConsumableArray(prevIncorrectAnswers), [questionIndex]);
+      });
+    }
+
+    if (questionIndex === questions.length - 1) {
+      setShowResults(true);
+    } else {
+      handleNextQuestion();
+    }
+  };
+
+  var handleNextQuestion = function handleNextQuestion() {
+    setCurrentQuestionIndex(function (prevCurrentQuestionIndex) {
+      return prevCurrentQuestionIndex + 1;
+    });
+  };
+
+  var handleStartSurvey = function handleStartSurvey() {
+    setCurrentQuestionIndex(0);
+  };
+
+  var getProgressPercentage = function getProgressPercentage() {
+    return Math.floor(currentQuestionIndex / questions.length * 100);
+  };
+
+  var correctAnswersPercentage = (questions.length - incorrectAnswers.length) / questions.length * 100;
+  var resultMessage = '';
+
+  if (correctAnswersPercentage === 100) {
+    resultMessage = 'Поздравляем! Вы отлично знаете методику «Customer Development»! Ваши знания об этом подходе на высоком уровне. Продолжайте в том же духе и не останавливайтесь на достигнутом!';
+  } else if (correctAnswersPercentage >= 70) {
+    resultMessage = 'Хороший результат! Ваши знания о «Customer Development» достаточно хорошие. Однако всегда есть место для улучшения. Рекомендуем изучить эту методику более подробно, чтобы стать настоящим экспертом.';
+  } else if (correctAnswersPercentage >= 40) {
+    resultMessage = 'Вы еще мало знаете о «Customer Development». Рекомендуем почитать подробнее о его основах и принципах. Внимательное изучение материалов поможет вам повысить свои знания и навыки в этой области.';
+  } else {
+    resultMessage = 'Упс! Ваши знания о «Customer Development» требуют значительного улучшения. Не отчаивайтесь! Существует множество ресурсов, где вы можете узнать больше о «Customer Development». Рекомендуем начать с основ и постепенно расширять свои знания.';
+  }
+
+  return /*#__PURE__*/react.createElement("div", {
+    className: "O_QuestionBlock"
+  }, currentQuestionIndex === -1 ? /*#__PURE__*/react.createElement("div", {
+    className: "M_StartCard"
+  }, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", {
+    className: "A_ProgressBar"
+  }, /*#__PURE__*/react.createElement("progress", {
+    value: getProgressPercentage(),
+    max: 100
+  })), /*#__PURE__*/react.createElement("h3", null, "5 \u0432\u043E\u043F\u0440\u043E\u0441\u043E\u0432"), /*#__PURE__*/react.createElement("h2", {
+    className: "A_HeaderTwo"
+  }, "\u0422\u0435\u0441\u0442 \u043D\u0430 \u0437\u043D\u0430\u043D\u0438\u0435 \xABCustomer Development\xBB")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", {
+    className: "A_ExpText"
+  }, /*#__PURE__*/react.createElement("p", {
+    className: "A_Paragraph"
+  }, "\u041F\u0440\u043E\u0439\u0434\u0438\u0442\u0435 \u044D\u0442\u043E\u0442 \u0442\u0435\u0441\u0442, \u0447\u0442\u043E\u0431\u044B \u043E\u0446\u0435\u043D\u0438\u0442\u044C \u0432\u0430\u0448\u0443 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0443 \u0432\xA0\u043E\u0431\u043B\u0430\u0441\u0442\u0438 \xABCustomer Development\xBB. \xABCustomer Development\xBB \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0432\u0430\u0436\u043D\u044B\u043C \u043F\u043E\u0434\u0445\u043E\u0434\u043E\u043C \u0432\xA0\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0435 \u0438\xA0\u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0438 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u0430\u043C\u0438, \u0438\xA0\u0443\u043C\u0435\u043D\u0438\u0435 \u043F\u0440\u0438\u043C\u0435\u043D\u044F\u0442\u044C \u0435\u0433\u043E \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0438 \u043C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C \u043F\u043E\u043B\u0435\u0437\u043D\u044B\u043C \u0434\u043B\u044F \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0441\u0442\u043E\u0432 \u0432\xA0\u044D\u0442\u043E\u0439 \u043E\u0431\u043B\u0430\u0441\u0442\u0438."), /*#__PURE__*/react.createElement("p", {
+    className: "A_Paragraph"
+  }, "\u0422\u0435\u0441\u0442 \u0441\u043E\u0441\u0442\u043E\u0438\u0442 \u0438\u0437\xA05\xA0\u0432\u043E\u043F\u0440\u043E\u0441\u043E\u0432, \u0432\xA0\u043A\u0430\u0436\u0434\u043E\u043C \u0438\u0437\xA0\u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u0432\u0430\u043C \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u0435\u0442\u0441\u044F \u0432\u044B\u0431\u0440\u0430\u0442\u044C \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u043E\u0442\u0432\u0435\u0442 \u0438\u0437\xA0\u0442\u0440\u0435\u0445 \u0432\u0430\u0440\u0438\u0430\u043D\u0442\u043E\u0432. \u0412\u0430\u0448\u0430 \u0437\u0430\u0434\u0430\u0447\u0430\xA0\u2014 \u0432\u044B\u0431\u0440\u0430\u0442\u044C \u043D\u0430\u0438\u0431\u043E\u043B\u0435\u0435 \u043F\u043E\u0434\u0445\u043E\u0434\u044F\u0449\u0438\u0439 \u043E\u0442\u0432\u0435\u0442, \u043E\u0441\u043D\u043E\u0432\u044B\u0432\u0430\u044F\u0441\u044C \u043D\u0430\xA0\u0432\u0430\u0448\u0438\u0445 \u0437\u043D\u0430\u043D\u0438\u044F\u0445 \u043E\xA0\xABCustomer Development\xBB. \u041F\u043E\xA0\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0438\u0438 \u0442\u0435\u0441\u0442\u0430 \u0432\u044B\xA0\u043F\u043E\u043B\u0443\u0447\u0438\u0442\u0435 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u044B, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u043E\u043C\u043E\u0433\u0443\u0442 \u0432\u0430\u043C \u043E\u0446\u0435\u043D\u0438\u0442\u044C \u0432\u0430\u0448 \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u0432\xA0\u044D\u0442\u043E\u0439 \u043E\u0431\u043B\u0430\u0441\u0442\u0438.")), /*#__PURE__*/react.createElement("button", {
+    onClick: handleStartSurvey
+  }, "\u041F\u0440\u0438\u0441\u0442\u0443\u043F\u0438\u0442\u044C \u043A \u0442\u0435\u0441\u0442\u0443 \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u0437\u043D\u0430\u043D\u0438\u044F"))) : /*#__PURE__*/react.createElement("div", null, !showResults && /*#__PURE__*/react.createElement("div", {
+    className: "M_QuestionCard"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "A_ProgressBar"
+  }, /*#__PURE__*/react.createElement("progress", {
+    value: getProgressPercentage(),
+    max: 100
+  }), /*#__PURE__*/react.createElement("h3", null, "\u0412\u043E\u043F\u0440\u043E\u0441 ", currentQuestionIndex + 1), /*#__PURE__*/react.createElement("h2", {
+    className: "A_HeaderTwo"
+  }, questions[currentQuestionIndex].question)), /*#__PURE__*/react.createElement("div", null, questions[currentQuestionIndex].options.map(function (option, index) {
+    return /*#__PURE__*/react.createElement("div", {
+      key: index
+    }, /*#__PURE__*/react.createElement("button", {
+      onClick: function onClick() {
+        return handleOptionSelect(currentQuestionIndex, {
+          value: index
+        });
+      }
+    }, option));
+  }))), showResults && /*#__PURE__*/react.createElement("div", {
+    className: "M_StartCard"
+  }, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("progress", {
+    value: 100,
+    max: 100
+  }), /*#__PURE__*/react.createElement("h3", null, "\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442"), /*#__PURE__*/react.createElement("h2", {
+    className: "A_HeaderTwo"
+  }, "\u0412\u044B \u043E\u0442\u0432\u0435\u0442\u0438\u043B\u0438 \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E \u043D\u0430 ", questions.length - incorrectAnswers.length, " \u0438\u0437 ", questions.length)), /*#__PURE__*/react.createElement("div", {
+    className: "A_ResultsBackgound"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "A_ExpText"
+  }, /*#__PURE__*/react.createElement("p", {
+    className: "A_Paragraph"
+  }, resultMessage))))));
+};
+
+/* harmony default export */ const questions_cusdev = (questions_cusdev_QuizCusDevComponent);
 ;// CONCATENATED MODULE: ./src/index.js
+
+
 
 
 
@@ -1189,6 +1503,16 @@ document.addEventListener('DOMContentLoaded', function () {
   var container3 = document.getElementById('quiz-comp');
   var root3 = (0,client/* createRoot */.s)(container3);
   root3.render( /*#__PURE__*/react.createElement(quiz_component, null));
+});
+document.addEventListener('DOMContentLoaded', function () {
+  var container4 = document.getElementById('product-comp');
+  var root4 = (0,client/* createRoot */.s)(container4);
+  root4.render( /*#__PURE__*/react.createElement(product_option, null));
+});
+document.addEventListener('DOMContentLoaded', function () {
+  var container5 = document.getElementById('quiz-cusdev-comp');
+  var root5 = (0,client/* createRoot */.s)(container5);
+  root5.render( /*#__PURE__*/react.createElement(questions_cusdev, null));
 });
 })();
 

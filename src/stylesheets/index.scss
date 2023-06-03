@@ -200,6 +200,18 @@ body {
     width: 100%;
   }
 
+  .A_TableModule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 10px;
+    background: var(--beige);
+    border-radius: 10px;
+    width: 100%;
+  } 
+
   .A_FooterChapter {
     font-family: 'Wermut';
     font-style: normal;
@@ -217,6 +229,22 @@ body {
     align-items: center;
     padding-top: 160px;
     gap: 36px;
+  }
+
+  .M_SectionDescriptionAbout {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 160px;
+    gap: 36px;
+    background-color: var(--black);
+  }
+
+  .M_SectionDescriptionAbout .A_HeaderTwo {
+    color: var(--pink);
+    text-align: center;
   }
 
   .M_Tags {
@@ -924,17 +952,23 @@ body {
   }
 
   .timeline {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 20px;
   }
   
   .dates {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
     margin: 0;
+    padding: 20px;
     list-style: none;
+    border-radius: 10px;
+    background-color: var(--black);
   }
   
   .dates li {
@@ -943,16 +977,46 @@ body {
     border-radius: 4px;
     background-color: #f4f4f4;
     cursor: pointer;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 100px;
+    border: none;
+    opacity: 0.6;
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.2);
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 110%;
+    cursor: pointer;
   }
   
   .dates li.active {
-    background-color: #61bd4f;
+    background-color: var(--orange);
+    opacity: 0.8;
     color: #fff;
   }
   
   .details {
-    margin-top: 16px;
+    padding: 30px 30px;
+    position: sticky;
+    top: 95px;
+    height: 100%;
+    width: 100%;
+    margin-top: 0px;
+    border-radius: 10px;
+    background-color: var(--beige);
+  }
+
+  .M_TextTimeline {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
   
   .details p {
@@ -967,6 +1031,61 @@ body {
 
   .header {
     display: none;
+  }
+
+  .product_chart {
+     display: flex;
+     flex-direction: row;
+     gap: 20px;
+  }
+
+  .flowchart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+    border-radius: 10px;
+    background-color: var(--black);
+  }
+
+  .flowchart div {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+  }
+
+  .flowchart div button {
+    position: relative;
+    padding: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 100px;
+    border: none;
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.8);
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 110%;
+  }
+
+  .flowchart div button:disabled {
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0.2;
+
   }
 
 }

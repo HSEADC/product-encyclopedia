@@ -2,7 +2,8 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Customer Journey Map</title>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.svg">
     <analytics></analytics>
   </head>
 
@@ -35,7 +36,7 @@
             </div>
             <div class="M_Tags">
                 <a href="" class="A_MenuItem_non-active">Определение</a>
-                <a href="" class="A_MenuItem_non-active">Определение</a>
+                <a href="" class="A_MenuItem_non-active">Методология</a>
             </div>
         </div>  
 
@@ -53,7 +54,7 @@
             <div class="O_CaptionBlock">
                 <div class="M_ParagraphBlock">
                     <div class="A_Paragraph">
-                        После сбора информации всеми доступными методами проводится анализ и&nbsp;определяются проблемы, на&nbsp;которых нужно сфокусироваться и&nbsp;которые нужно решить. Для этого хорошо подходит инструмент представления информации в&nbsp;виде Cus- tomer Journey Map. Благодаря этому инструменту можно разбить большие сложные процессы на&nbsp;ключевые шаги, выявить проблемы и&nbsp;найти идеи, как эти проблемы можно решить.
+                        После сбора информации всеми доступными методами проводится анализ и&nbsp;определяются проблемы, на&nbsp;которых нужно сфокусироваться и&nbsp;которые нужно решить. Для этого хорошо подходит инструмент представления информации в&nbsp;виде Customer Journey Map. Благодаря этому инструменту можно разбить большие сложные процессы на&nbsp;ключевые шаги, выявить проблемы и&nbsp;найти идеи, как эти проблемы можно решить.
                     </div>
                     <div class="A_Paragraph">
                         В&nbsp;своей самой базовой форме составление карты путешествия начинается с&nbsp;составления серии пользовательских целей и&nbsp;действий в&nbsp;виде скелета временной шкалы. Затем скелет дополняется мыслями и&nbsp;эмоциями пользователя, чтобы создать повествование. Наконец, это повествование сводится к&nbsp;визуализации, используемой для передачи идей, которые будут лежать в&nbsp;основе процессов проектирования. Карта путешествий сочетает в&nbsp;себе два мощных инструмента: повествование и&nbsp;визуализацию.
@@ -191,7 +192,6 @@
                 </div>
             </div>
             
-
             <div class="O_CaptionBlock">
                 <div class="M_ParagraphBlock">
                     <div class="A_Paragraph">
@@ -218,8 +218,8 @@
             </div>
 
             <div class="M_InfoImage">
-                <div class="A_Table">
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="700" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FU2puHd62yetjx98k7jsP7F%2FCustomer-journey-map%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DRWLBuK4KS1AQubgN-1" allowfullscreen></iframe>
+                <div class="A_TableModule">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="500" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FU2puHd62yetjx98k7jsP7F%2FCustomer-journey-map%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DRWLBuK4KS1AQubgN-1" allowfullscreen></iframe>
                 </div>
                 <div class="A_Caption">Пример Customer Journey Map в FigJam</div>
             </div>
@@ -311,6 +311,50 @@
         </div>
   
     </div>
+
+    <script>
+                // Получаем элементы DOM
+        const StickyCardInfo = document.querySelector('.O_StickyCardInfo');
+        const paragraphs = StickyCardInfo.querySelectorAll('.A_Paragraph');
+
+        // Определяем тексты для разных моментов прокрутки
+        const textByPosition = {
+            0: [
+            'CJM — это методика, которая позволяет разработчикам и дизайнерам понять и описать взаимодействие клиентов с продуктом или услугой на каждом этапе их путешествия.',
+            'Важной частью CJM является исследование рынка и составление портретов пользователей, чтобы полностью понять контекст проблемы и потребности клиентов.',
+            '',
+            ],
+            1200: [
+            'CJM помогает выявить слабые места и улучшить пользовательский опыт, а также определить возможности для инноваций и развития продукта.',
+            'Этот подход включает создание диаграммы, которая визуализирует каждый шаг клиента, его эмоции, потребности и взаимодействие с продуктом.',
+            '',
+            ],
+            2800: [
+            'Цель CJM — улучшить взаимодействие с клиентами и предоставить им более положительный и удовлетворительный опыт.',
+            '',
+            '',
+            ],
+        };
+
+        // Обработчик события прокрутки страницы
+        window.addEventListener('scroll', function () {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Проверяем текущую позицию прокрутки и обновляем тексты внутри A_Paragraph
+            paragraphs.forEach((paragraph, index) => {
+            let newText = '';
+            const positions = Object.keys(textByPosition).map(Number);
+            const closestPosition = positions.reduce((prev, curr) =>
+                Math.abs(curr - scrollTop) < Math.abs(prev - scrollTop) ? curr : prev
+            );
+            if (scrollTop >= closestPosition) {
+                const texts = textByPosition[closestPosition];
+                newText = texts[index % texts.length];
+            }
+            paragraph.innerHTML = newText;
+            });
+        });
+    </script>
 
   </body>
   

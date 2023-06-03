@@ -2,7 +2,8 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Энциклопедия цифрового продукта — реализация</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
     <analytics></analytics>
   </head>
 
@@ -92,7 +93,7 @@
   
           <div class="M_PreviewText">
               <div class="A_Quote">
-                  <a href="research/cjm.html">Что пользователь получает?</a>
+                  <a href="deliver/what_user_gets.html">Что пользователь получает?</a>
               </div>
               <div class="A_Paragraph">
                 Этот этап состоит из&nbsp;завершающих шагов, способствующих созданию применяемого решения пользователю.
@@ -103,7 +104,6 @@
       </div>
 
     </div>
-
 
     <div class="FooterBlock">
 
@@ -189,6 +189,45 @@
       </div>
 
     </div>
+
+    <script>
+      // Получаем элементы DOM
+    const stickyCardAbout = document.querySelector('.O_StickyCardAbout');
+    const paragraphs = stickyCardAbout.querySelectorAll('.A_Paragraph');
+
+    // Определяем тексты для разных моментов прокрутки
+    const textByPosition = {
+    0: [
+    '— Тестирование прототипов или решений для получения ранней валидации',
+    '— Запуск пилотных проектов, функций и экспериментов для получения информации о клиенте',
+    '— Подготовка к запуску',
+    ],
+    1200: [
+    'Раздел обращается к этапу доставки цифровых продуктов, включая процессы и инструменты, связанные с запуском и распространением продукта.',
+    'Важным аспектом доставки является стратегия выхода на рынок, которая определяет, каким образом продукт будет представлен и внедрен на целевом рынке.',
+    'Статья объясняет значение тестирования и обратной связи пользователей на этапе доставки, чтобы выявить проблемы и сделать необходимые улучшения перед запуском.',
+    ],
+    };
+
+    // Обработчик события прокрутки страницы
+    window.addEventListener('scroll', function () {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Проверяем текущую позицию прокрутки и обновляем тексты внутри A_Paragraph
+    paragraphs.forEach((paragraph, index) => {
+    let newText = '';
+    const positions = Object.keys(textByPosition).map(Number);
+    const closestPosition = positions.reduce((prev, curr) =>
+      Math.abs(curr - scrollTop) < Math.abs(prev - scrollTop) ? curr : prev
+    );
+    if (scrollTop >= closestPosition) {
+      const texts = textByPosition[closestPosition];
+      newText = texts[index % texts.length];
+    }
+    paragraph.innerHTML = newText;
+    });
+    });
+  </script>
 
   </body>
 </html>

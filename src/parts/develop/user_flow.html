@@ -2,7 +2,8 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>User Flow</title>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.svg">
     <analytics></analytics>
   </head>
 
@@ -35,7 +36,7 @@
             </div>
             <div class="M_Tags">
                 <a href="" class="A_MenuItem_non-active">Разработка</a>
-                <a href="" class="A_MenuItem_non-active">Разработка</a>
+                <a href="" class="A_MenuItem_non-active">Инструмент</a>
             </div>
         </div>  
 
@@ -97,8 +98,8 @@
             </div>
 
             <div class="M_InfoImage">
-                <div class="A_Table">
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="700" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGePpDUg2rMC427SOHDZ1KZ%2FUntitled%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DDZZ6EdX8vtFEJKbE-1" allowfullscreen></iframe>
+                <div class="A_TableModule">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="500" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGePpDUg2rMC427SOHDZ1KZ%2FUntitled%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DDZZ6EdX8vtFEJKbE-1" allowfullscreen></iframe>
                 </div>
                 <div class="A_Caption">Пример User Flow в FigJam</div>
             </div>
@@ -306,6 +307,50 @@
         </div>
   
     </div>
+
+    <script>
+                // Получаем элементы DOM
+        const StickyCardInfo = document.querySelector('.O_StickyCardInfo');
+        const paragraphs = StickyCardInfo.querySelectorAll('.A_Paragraph');
+
+        // Определяем тексты для разных моментов прокрутки
+        const textByPosition = {
+            0: [
+            'User Flow (поток пользователя) — это визуальное представление последовательности действий, которые пользователь выполняет при взаимодействии с продуктом или услугой.',
+            'Одной из основных целей User Flow является оптимизация пользовательского опыта путем создания понятной и эффективной пользовательской навигации.',
+            '',
+            ],
+            1800: [
+            'Важным элементом User Flow является учет пользовательских потребностей, чтобы создать интуитивно понятный и легкий в использовании интерфейс.',
+            'User Flow помогает разработчикам и дизайнерам понять, как пользователи взаимодействуют с продуктом, выявить потенциальные проблемы и улучшить процесс навигации.',
+            '',
+            ],
+            4000: [
+            'User Flow также может быть использован для тестирования и анализа пользовательского поведения, что позволяет выявить узкие места и предложить улучшения для улучшения пользовательского опыта.',
+            '',
+            '',
+            ],
+        };
+
+        // Обработчик события прокрутки страницы
+        window.addEventListener('scroll', function () {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Проверяем текущую позицию прокрутки и обновляем тексты внутри A_Paragraph
+            paragraphs.forEach((paragraph, index) => {
+            let newText = '';
+            const positions = Object.keys(textByPosition).map(Number);
+            const closestPosition = positions.reduce((prev, curr) =>
+                Math.abs(curr - scrollTop) < Math.abs(prev - scrollTop) ? curr : prev
+            );
+            if (scrollTop >= closestPosition) {
+                const texts = textByPosition[closestPosition];
+                newText = texts[index % texts.length];
+            }
+            paragraph.innerHTML = newText;
+            });
+        });
+    </script>
 
   </body>
   
