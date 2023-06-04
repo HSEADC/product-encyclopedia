@@ -1095,6 +1095,10 @@ body {
 }
 
 @media (max-width: 1024px) {
+  body, .A_IllustrationBlockFirst {
+    overflow-x: hidden;
+  }
+
   body .InformationBlock {
     display: flex;
     flex-direction: column;
@@ -1221,14 +1225,20 @@ body {
     display: none !important;
   }
 
-  body .S_Navigation, body .O_FooterInformation, body .M_LinkList {
+  body .S_Navigation, body .O_FooterInformation {
     display: flex;
     flex-direction: column;
     width: 100vw;
   }
 
+  body .M_LinkList {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+
   .O_FooterInformation img {
-    opacity: 0;
+    display: none;
   }
 
   body .product_chart {
