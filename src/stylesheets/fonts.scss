@@ -6,6 +6,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Wermut';
+  src: url('fonts/WermutItalic.woff2') format('woff2'),
+  url('fonts/WermutItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
 
 @font-face {
   font-family: 'HelveticaNeue';

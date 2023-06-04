@@ -7,6 +7,7 @@ import SurveyComponent from './javascript/int_modules/questions.jsx'
 import QuizComponent from './javascript/int_modules/quiz_component.jsx'
 import ProductComponent from './javascript/int_modules/product_option.jsx'
 import QuizCusDevComponent from './javascript/int_modules/questions_cusdev.jsx'
+import BurgerMenu from './javascript/burger_menu.jsx'
 
 document.addEventListener('DOMContentLoaded', () => {
     const container1 = document.getElementById('timeline-root')
@@ -36,6 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const container5 = document.getElementById('quiz-cusdev-comp')
     const root5 = createRoot(container5)
     root5.render(<QuizCusDevComponent />)
+  })
+  
+
+document.addEventListener('DOMContentLoaded', () => {
+    const container6 = document.getElementById('burger-menu')
+    const root6 = createRoot(container6)
+    root6.render(<BurgerMenu />)
   })
   
 

@@ -237,7 +237,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 160px;
+    padding-bottom: 40vh;
+    padding-top: 30vh;
     gap: 36px;
     background-color: var(--black);
   }
@@ -536,6 +537,7 @@ body {
       align-items: center;
       padding: 15px;
       gap: 10px;
+      color: var(--black);
       border: 1px solid var(--black); 
       border-radius: 85px;
       background: #F5F3EF;
@@ -1095,8 +1097,11 @@ body {
 }
 
 @media (max-width: 1024px) {
-  body, .A_IllustrationBlockFirst {
+  body {
     overflow-x: hidden;
+  }
+  .A_IllustrationBlockFirst {
+    overflow: hidden;
   }
 
   body .InformationBlock {
@@ -1260,8 +1265,14 @@ body {
     font-size: 12px;
   }
 
+  body .O_QuestionBlock .M_StartCard div:nth-child(2) .A_ExpText p:nth-child(2) {
+    display: none;
+  }
 
-  /* Header */
+  //Бургер-меню
+
+  
+    /* Header */
 .header{
   display: block !important ;
   background-color: var(--white);
@@ -1379,7 +1390,7 @@ body {
   top:0;
 }
 
+}
 
 
 
- }

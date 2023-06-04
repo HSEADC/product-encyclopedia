@@ -1480,7 +1480,72 @@ var questions_cusdev_QuizCusDevComponent = function QuizCusDevComponent() {
 };
 
 /* harmony default export */ const questions_cusdev = (questions_cusdev_QuizCusDevComponent);
+;// CONCATENATED MODULE: ./src/javascript/burger_menu.jsx
+function burger_menu_slicedToArray(arr, i) { return burger_menu_arrayWithHoles(arr) || burger_menu_iterableToArrayLimit(arr, i) || burger_menu_unsupportedIterableToArray(arr, i) || burger_menu_nonIterableRest(); }
+
+function burger_menu_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function burger_menu_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return burger_menu_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return burger_menu_arrayLikeToArray(o, minLen); }
+
+function burger_menu_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function burger_menu_iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function burger_menu_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+var BurgerMenu = function BurgerMenu() {
+  var _useState = (0,react.useState)(false),
+      _useState2 = burger_menu_slicedToArray(_useState, 2),
+      isOpen = _useState2[0],
+      setIsOpen = _useState2[1];
+
+  var toggleMenu = function toggleMenu() {
+    setIsOpen(!isOpen);
+  };
+
+  return /*#__PURE__*/react.createElement("div", {
+    className: "O_MenuMob header"
+  }, /*#__PURE__*/react.createElement("a", {
+    href: "../index.html",
+    className: "logo"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: "../images/A_LogotypeMob.svg",
+    alt: ""
+  })), /*#__PURE__*/react.createElement("input", {
+    className: "side-menu",
+    type: "checkbox",
+    id: "side-menu",
+    checked: isOpen,
+    onChange: toggleMenu
+  }), /*#__PURE__*/react.createElement("label", {
+    className: "hamb",
+    htmlFor: "side-menu"
+  }, /*#__PURE__*/react.createElement("span", {
+    className: "hamb-line ".concat(isOpen ? 'active' : '')
+  })), /*#__PURE__*/react.createElement("nav", {
+    className: "nav ".concat(isOpen ? 'open' : '')
+  }, /*#__PURE__*/react.createElement("ul", {
+    className: "menu"
+  }, /*#__PURE__*/react.createElement("li", null, /*#__PURE__*/react.createElement("a", {
+    href: "./research.html",
+    className: "A_MenuItem_non-active"
+  }, "\u0418\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043D\u0438\u0435")), /*#__PURE__*/react.createElement("li", null, /*#__PURE__*/react.createElement("a", {
+    href: "./define.html",
+    className: "A_MenuItem_non-active"
+  }, "\u041E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u0438\u0435")), /*#__PURE__*/react.createElement("li", null, /*#__PURE__*/react.createElement("a", {
+    href: "./develop.html",
+    className: "A_MenuItem_non-active"
+  }, "\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430")), /*#__PURE__*/react.createElement("li", null, /*#__PURE__*/react.createElement("a", {
+    href: "./deliver.html",
+    className: "A_MenuItem_non-active"
+  }, "\u0420\u0435\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u044F")))));
+};
+
+/* harmony default export */ const burger_menu = (BurgerMenu);
 ;// CONCATENATED MODULE: ./src/index.js
+
 
 
 
@@ -1513,6 +1578,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var container5 = document.getElementById('quiz-cusdev-comp');
   var root5 = (0,client/* createRoot */.s)(container5);
   root5.render( /*#__PURE__*/react.createElement(questions_cusdev, null));
+});
+document.addEventListener('DOMContentLoaded', function () {
+  var container6 = document.getElementById('burger-menu');
+  var root6 = (0,client/* createRoot */.s)(container6);
+  root6.render( /*#__PURE__*/react.createElement(burger_menu, null));
 });
 })();
 
