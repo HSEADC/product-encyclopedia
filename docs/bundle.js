@@ -1544,7 +1544,187 @@ var BurgerMenu = function BurgerMenu() {
 };
 
 /* harmony default export */ const burger_menu = (BurgerMenu);
+;// CONCATENATED MODULE: ./src/javascript/int_modules/questions_func.jsx
+function questions_func_toConsumableArray(arr) { return questions_func_arrayWithoutHoles(arr) || questions_func_iterableToArray(arr) || questions_func_unsupportedIterableToArray(arr) || questions_func_nonIterableSpread(); }
+
+function questions_func_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function questions_func_iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function questions_func_arrayWithoutHoles(arr) { if (Array.isArray(arr)) return questions_func_arrayLikeToArray(arr); }
+
+function questions_func_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function questions_func_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? questions_func_ownKeys(Object(source), !0).forEach(function (key) { questions_func_defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : questions_func_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function questions_func_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function questions_func_slicedToArray(arr, i) { return questions_func_arrayWithHoles(arr) || questions_func_iterableToArrayLimit(arr, i) || questions_func_unsupportedIterableToArray(arr, i) || questions_func_nonIterableRest(); }
+
+function questions_func_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function questions_func_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return questions_func_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return questions_func_arrayLikeToArray(o, minLen); }
+
+function questions_func_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function questions_func_iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function questions_func_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+var QuizFuncComponent = function QuizFuncComponent() {
+  var _useState = (0,react.useState)([{
+    question: 'Что представляют собой функциональные требования в разработке цифровых продуктов?',
+    options: ['Описание визуального дизайна продукта', 'Определение основных функций и возможностей продукта', 'План маркетинговых активностей для продукта'],
+    correctOption: 1
+  }, {
+    question: 'Что включает процесс определения функциональных требований?',
+    options: ['Анализ потребностей пользователей', 'Определение внешнего вида продукта', 'Определение бюджета проекта'],
+    correctOption: 0
+  }, {
+    question: 'Какие основные элементы содержатся в функциональных требованиях?',
+    options: ['Описание визуального дизайна продукта', 'Определение основных функций и возможностей продукта', 'План маркетинговых активностей для продукта'],
+    correctOption: 1
+  }, {
+    question: 'Что представляет собой диаграмма прецедентов?',
+    options: ['Визуализацию последовательности действий пользователя', 'Визуализацию взаимодействия компонентов системы', 'Визуализацию взаимодействия с внешними системами'],
+    correctOption: 0
+  }, {
+    question: 'Что означает требование «сквозной функциональности»?',
+    options: ['Функция должна быть доступна во всех частях продукта', 'Функция должна быть доступна только определенным пользователям', 'Функция должна быть доступна только в определенное время'],
+    correctOption: 0
+  }, {
+    question: 'Что такое требование «отказоустойчивости»?',
+    options: ['Функция должна быть доступна во всех частях продукта', 'Способность продукта работать без подключения к интернету', 'Способность продукта обеспечивать безопасность данных'],
+    correctOption: 2
+  }]),
+      _useState2 = questions_func_slicedToArray(_useState, 2),
+      questions = _useState2[0],
+      setQuestions = _useState2[1];
+
+  var _useState3 = (0,react.useState)({}),
+      _useState4 = questions_func_slicedToArray(_useState3, 2),
+      selectedOptions = _useState4[0],
+      setSelectedOptions = _useState4[1];
+
+  var _useState5 = (0,react.useState)(-1),
+      _useState6 = questions_func_slicedToArray(_useState5, 2),
+      currentQuestionIndex = _useState6[0],
+      setCurrentQuestionIndex = _useState6[1];
+
+  var _useState7 = (0,react.useState)(false),
+      _useState8 = questions_func_slicedToArray(_useState7, 2),
+      showResults = _useState8[0],
+      setShowResults = _useState8[1];
+
+  var _useState9 = (0,react.useState)([]),
+      _useState10 = questions_func_slicedToArray(_useState9, 2),
+      incorrectAnswers = _useState10[0],
+      setIncorrectAnswers = _useState10[1];
+
+  var handleOptionSelect = function handleOptionSelect(questionIndex, option) {
+    setSelectedOptions(function (prevSelectedOptions) {
+      return questions_func_objectSpread(questions_func_objectSpread({}, prevSelectedOptions), {}, questions_func_defineProperty({}, questionIndex, option.value));
+    });
+
+    if (option.value !== questions[questionIndex].correctOption) {
+      setIncorrectAnswers(function (prevIncorrectAnswers) {
+        return [].concat(questions_func_toConsumableArray(prevIncorrectAnswers), [questionIndex]);
+      });
+    }
+
+    if (questionIndex === questions.length - 1) {
+      setShowResults(true);
+    } else {
+      handleNextQuestion();
+    }
+  };
+
+  var handleNextQuestion = function handleNextQuestion() {
+    setCurrentQuestionIndex(function (prevCurrentQuestionIndex) {
+      return prevCurrentQuestionIndex + 1;
+    });
+  };
+
+  var handleStartSurvey = function handleStartSurvey() {
+    setCurrentQuestionIndex(0);
+  };
+
+  var getProgressPercentage = function getProgressPercentage() {
+    return Math.floor(currentQuestionIndex / questions.length * 100);
+  };
+
+  var correctAnswersPercentage = (questions.length - incorrectAnswers.length) / questions.length * 100;
+  var resultMessage = '';
+
+  if (correctAnswersPercentage === 100) {
+    resultMessage = 'Поздравляем! Вы отлично знаете "Функциональные требования"! Ваши знания об этом аспекте разработки продуктов на высоком уровне. Продолжайте в том же духе и не останавливайтесь на достигнутом!';
+  } else if (correctAnswersPercentage >= 70) {
+    resultMessage = 'Хороший результат! Ваши знания о "Функциональных требованиях" достаточно хорошие. Однако всегда есть место для улучшения. Рекомендуем изучить этот аспект более подробно, чтобы стать настоящим экспертом.';
+  } else if (correctAnswersPercentage >= 40) {
+    resultMessage = 'Вы еще мало знаете о "Функциональных требованиях". Рекомендуем почитать подробнее о их основах и принципах. Внимательное изучение материалов поможет вам повысить свои знания и навыки в этой области.';
+  } else {
+    resultMessage = 'Упс! Ваши знания о "Функциональных требованиях" требуют значительного улучшения. Не отчаивайтесь! Существует множество ресурсов, где вы можете узнать больше о "Функциональных требованиях". Рекомендуем начать с основ и постепенно расширять свои знания.';
+  }
+
+  return /*#__PURE__*/react.createElement("div", {
+    className: "O_QuestionBlock"
+  }, currentQuestionIndex === -1 ? /*#__PURE__*/react.createElement("div", {
+    className: "M_StartCard"
+  }, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", {
+    className: "A_ProgressBar"
+  }, /*#__PURE__*/react.createElement("progress", {
+    value: getProgressPercentage(),
+    max: 100
+  })), /*#__PURE__*/react.createElement("h3", null, "5 \u0432\u043E\u043F\u0440\u043E\u0441\u043E\u0432"), /*#__PURE__*/react.createElement("h2", {
+    className: "A_HeaderTwo"
+  }, "\u0422\u0435\u0441\u0442 \u043D\u0430 \u0437\u043D\u0430\u043D\u0438\u0435 \u0444\u0443\u043D\u0446\u0438\u043A\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u0439")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", {
+    className: "A_ExpText"
+  }, /*#__PURE__*/react.createElement("p", {
+    className: "A_Paragraph"
+  }, "\u041F\u0440\u043E\u0439\u0434\u0438\u0442\u0435 \u044D\u0442\u043E\u0442 \u0442\u0435\u0441\u0442, \u0447\u0442\u043E\u0431\u044B \u043E\u0446\u0435\u043D\u0438\u0442\u044C \u0432\u0430\u0448\u0443 \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0443 \u0432\xA0\u043E\u0431\u043B\u0430\u0441\u0442\u0438 \xAB\u0424\u0443\u043D\u043A\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u0439\xBB. \u0424\u0443\u043D\u043A\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0435 \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F \u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F \u0432\u0430\u0436\u043D\u044B\u043C \u0430\u0441\u043F\u0435\u043A\u0442\u043E\u043C \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u0438\xA0\u043F\u0440\u043E\u0435\u043A\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u043E\u0432, \u0438\xA0\u043F\u043E\u043D\u0438\u043C\u0430\u043D\u0438\u0435 \u0438\u0445\xA0\u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0438\u0439 \u0438\xA0\u043F\u0440\u0438\u043C\u0435\u043D\u0435\u043D\u0438\u0435 \u043C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C \u043F\u043E\u043B\u0435\u0437\u043D\u044B\u043C \u0434\u043B\u044F \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0441\u0442\u043E\u0432 \u0432\xA0\u044D\u0442\u043E\u0439 \u043E\u0431\u043B\u0430\u0441\u0442\u0438."), /*#__PURE__*/react.createElement("p", {
+    className: "A_Paragraph"
+  }, "\u0422\u0435\u0441\u0442 \u0441\u043E\u0441\u0442\u043E\u0438\u0442 \u0438\u0437\xA06\xA0\u0432\u043E\u043F\u0440\u043E\u0441\u043E\u0432, \u0432\xA0\u043A\u0430\u0436\u0434\u043E\u043C \u0438\u0437\xA0\u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u0432\u0430\u043C \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u0435\u0442\u0441\u044F \u0432\u044B\u0431\u0440\u0430\u0442\u044C \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u043E\u0442\u0432\u0435\u0442 \u0438\u0437\xA0\u0442\u0440\u0435\u0445 \u0432\u0430\u0440\u0438\u0430\u043D\u0442\u043E\u0432. \u0412\u0430\u0448\u0430 \u0437\u0430\u0434\u0430\u0447\u0430\xA0\u2014 \u0432\u044B\u0431\u0440\u0430\u0442\u044C \u043D\u0430\u0438\u0431\u043E\u043B\u0435\u0435 \u043F\u043E\u0434\u0445\u043E\u0434\u044F\u0449\u0438\u0439 \u043E\u0442\u0432\u0435\u0442, \u043E\u0441\u043D\u043E\u0432\u044B\u0432\u0430\u044F\u0441\u044C \u043D\u0430\xA0\u0432\u0430\u0448\u0438\u0445 \u0437\u043D\u0430\u043D\u0438\u044F\u0445 \u043E\xA0\xAB\u0424\u0443\u043D\u043A\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F\u0445\xBB. \u041F\u043E\xA0\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0438\u0438 \u0442\u0435\u0441\u0442\u0430 \u0432\u044B\xA0\u043F\u043E\u043B\u0443\u0447\u0438\u0442\u0435 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u044B, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u043E\u043C\u043E\u0433\u0443\u0442 \u0432\u0430\u043C \u043E\u0446\u0435\u043D\u0438\u0442\u044C \u0432\u0430\u0448 \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0438 \u0432\xA0\u044D\u0442\u043E\u0439 \u043E\u0431\u043B\u0430\u0441\u0442\u0438.")), /*#__PURE__*/react.createElement("button", {
+    onClick: handleStartSurvey
+  }, "\u041F\u0440\u0438\u0441\u0442\u0443\u043F\u0438\u0442\u044C \u043A \u0442\u0435\u0441\u0442\u0443 \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u0437\u043D\u0430\u043D\u0438\u044F"))) : /*#__PURE__*/react.createElement("div", null, !showResults && /*#__PURE__*/react.createElement("div", {
+    className: "M_QuestionCard"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "A_ProgressBar"
+  }, /*#__PURE__*/react.createElement("progress", {
+    value: getProgressPercentage(),
+    max: 100
+  }), /*#__PURE__*/react.createElement("h3", null, "\u0412\u043E\u043F\u0440\u043E\u0441 ", currentQuestionIndex + 1), /*#__PURE__*/react.createElement("h2", {
+    className: "A_HeaderTwo"
+  }, questions[currentQuestionIndex].question)), /*#__PURE__*/react.createElement("div", null, questions[currentQuestionIndex].options.map(function (option, index) {
+    return /*#__PURE__*/react.createElement("div", {
+      key: index
+    }, /*#__PURE__*/react.createElement("button", {
+      onClick: function onClick() {
+        return handleOptionSelect(currentQuestionIndex, {
+          value: index
+        });
+      }
+    }, option));
+  }))), showResults && /*#__PURE__*/react.createElement("div", {
+    className: "M_StartCard"
+  }, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("progress", {
+    value: 100,
+    max: 100
+  }), /*#__PURE__*/react.createElement("h3", null, "\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442"), /*#__PURE__*/react.createElement("h2", {
+    className: "A_HeaderTwo"
+  }, "\u0412\u044B \u043E\u0442\u0432\u0435\u0442\u0438\u043B\u0438 \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E \u043D\u0430 ", questions.length - incorrectAnswers.length, " \u0438\u0437 ", questions.length)), /*#__PURE__*/react.createElement("div", {
+    className: "A_ResultsBackgound"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "A_ExpText"
+  }, /*#__PURE__*/react.createElement("p", {
+    className: "A_Paragraph"
+  }, resultMessage))))));
+};
+
+/* harmony default export */ const questions_func = (QuizFuncComponent);
 ;// CONCATENATED MODULE: ./src/index.js
+
 
 
 
@@ -1583,6 +1763,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var container6 = document.getElementById('burger-menu');
   var root6 = (0,client/* createRoot */.s)(container6);
   root6.render( /*#__PURE__*/react.createElement(burger_menu, null));
+});
+document.addEventListener('DOMContentLoaded', function () {
+  var container7 = document.getElementById('quiz–func-comp');
+  var root7 = (0,client/* createRoot */.s)(container7);
+  root7.render( /*#__PURE__*/react.createElement(questions_func, null));
 });
 })();
 

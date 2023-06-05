@@ -8,6 +8,7 @@ import QuizComponent from './javascript/int_modules/quiz_component.jsx'
 import ProductComponent from './javascript/int_modules/product_option.jsx'
 import QuizCusDevComponent from './javascript/int_modules/questions_cusdev.jsx'
 import BurgerMenu from './javascript/burger_menu.jsx'
+import QuizFuncComponent from './javascript/int_modules/questions_func.jsx'
 
 document.addEventListener('DOMContentLoaded', () => {
     const container1 = document.getElementById('timeline-root')
@@ -46,4 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
     root6.render(<BurgerMenu />)
   })
   
-
+  document.addEventListener('DOMContentLoaded', () => {
+    const container7 = document.getElementById('quiz–func-comp')
+    const root7 = createRoot(container7)
+    root7.render(<QuizFuncComponent />)
+  })
