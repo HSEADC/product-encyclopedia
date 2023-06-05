@@ -2,7 +2,9 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Энциклопедия цифрового продукта — разработка</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
     <analytics></analytics>
   </head>
 
@@ -17,6 +19,33 @@
         <a href="./deliver.html" class="A_MenuItem_non-active">Реализация</a>
       </div>
     </div>
+
+
+
+    <div class="O_MenuMob header">
+      <a href="../../index.html" class="logo"><img src="../images/A_LogotypeMob.svg" alt=""></a>
+      <!-- Hamburger icon -->
+      <input class="side-menu" type="checkbox" id="side-menu"/>
+      <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+      <!-- Menu -->
+      <nav class="nav">
+          <ul class="menu">
+              <li>        
+                <a href="./research.html" class="A_MenuItem_non-active">Исследование</a>
+              </li>
+              <li>
+                <a href="./define.html" class="A_MenuItem_non-active">Определение</a>
+              </li>
+              <li>
+                <a href="./develop.html" class="A_MenuItem_non-active">Разработка</a>
+              </li>
+              <li>
+                <a href="./deliver.html" class="A_MenuItem_non-active">Реализация</a>
+              </li>
+          </ul>
+      </nav>
+    </div>
+
 
     <div class="M_SectionDescription">
       <div class="A_Title">
@@ -85,56 +114,378 @@
           </div>
         </div>
 
+        <div class="O_СhapterPreviews"> 
+          <div class="A_ImagePreview">
+              <img src="../images/preview_research.svg" alt="">
+          </div>
+  
+          <div class="M_Tags">
+              <a href="develop.html" class="A_MenuItem_non-active">Разработка</a>
+          </div>
+  
+          <div class="M_PreviewText">
+              <div class="A_Quote">
+                  <a href="develop/roadmap.html">Roadmap</a>
+              </div>
+              <div class="A_Paragraph">
+                Дорожная карта&nbsp;&mdash; это визуальное представление стратегических планов. Она связывает воедино стратегию (&laquo;почему&raquo;), работу, которую нужно будет выполнить для достижения целей (&laquo;что&raquo;), и&nbsp;график выполнения (&laquo;когда&raquo;).
+              </div>
+          </div>
+        </div>
+
+        <div class="O_СhapterPreviews"> 
+          <div class="A_ImagePreview">
+              <img src="../images/preview_research.svg" alt="">
+          </div>
+  
+          <div class="M_Tags">
+              <a href="develop.html" class="A_MenuItem_non-active">Разработка</a>
+          </div>
+  
+          <div class="M_PreviewText">
+              <div class="A_Quote">
+                  <a href="develop/lean_canvas.html">Lean canvas</a>
+              </div>
+              <div class="A_Paragraph">
+                Методология бережливого производства (lean methodology), известная внедрением различных инструментов управления продуктами, таких как lean canvas, стала популярной после того, как упомянутые гиганты уже были на&nbsp;пути к&nbsp;успеху. И, скорее всего, их&nbsp;истории легли в&nbsp;основу этого продвинутого мышления.
+              </div>
+          </div>
+        </div>
+
+        <div class="O_СhapterPreviews"> 
+          <div class="A_ImagePreview">
+              <img src="../images/preview_research.svg" alt="">
+          </div>
+  
+          <div class="M_Tags">
+              <a href="develop.html" class="A_MenuItem_non-active">Разработка</a>
+          </div>
+  
+          <div class="M_PreviewText">
+              <div class="A_Quote">
+                  <a href="develop/user_flow.html">User Flow
+                  </a>
+              </div>
+              <div class="A_Paragraph">
+                User Flow&nbsp;&mdash; это карта, показывающая путь, который пользова- тель выберет в&nbsp;приложении для выполнения задачи. UserFlow создается для интуитивно понятного проектирования продуктов, предоставляя пользователям правильную информацию в&nbsp;нужное время и&nbsp;позволяя им&nbsp;выполнять желаемые задачи за&nbsp;минимальное количество шагов, насколько это возможно.
+              </div>
+          </div>
+        </div>
+
+        <div class="O_СhapterPreviews"> 
+          <div class="A_ImagePreview">
+              <img src="../images/preview_research.svg" alt="">
+          </div>
+  
+          <div class="M_Tags">
+              <a href="develop.html" class="A_MenuItem_non-active">Разработка</a>
+          </div>
+  
+          <div class="M_PreviewText">
+              <div class="A_Quote">
+                  <a href="develop/user_stories.html">User Stories</a>
+              </div>
+              <div class="A_Paragraph">
+                Продуктовые команды предпочитают разбивать работу по&nbsp;разработке на&nbsp;пользовательские истории, а&nbsp;не&nbsp;на&nbsp;характеристики продукта или требования к&nbsp;продукту по&nbsp;нескольким причинам.
+              </div>
+          </div>
+        </div>
+
       </div>
+
+    </div>
+
+
+    <div class="A_TableTest">
+
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>1 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Разработка&nbsp;&mdash; это первый шаг в&nbsp;пространстве решений</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardTrue">
+          <div>
+            <h3 class="question-card-true">1 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это правда</p>
+            <div class="A_MenuItem_non-active">Разработка&nbsp;&mdash; это первый шаг в&nbsp;пространстве решений</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">На&nbsp;этом этапе команда создает прототипы решения и&nbsp;тестирует его, вовлекая конечного пользователя в&nbsp;процесс тестирования с&nbsp;помощью дивергентного подхода, что означает, что все типы решений являются прототипами.</p>
+          </div>
+        </div>
+      </div>  
+
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>2 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Для правильного проведения этапа разработки требуется не&nbsp;так время, как качество специалистов в&nbsp;этой сфере</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardFalse">
+          <div>
+            <h3 class="question-card-false">2 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это ложь</p>
+            <div class="A_MenuItem_non-active">Для правильного проведения этапа разработки требуется не&nbsp;так время, как качество специалистов в&nbsp;этой сфере</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Для правильного проведения такого рода исследований требуется время и&nbsp;внимание к&nbsp;пользовательскому опыту каждого отдельного пользователя, чтобы понять, что вызывает поведение, наблюдаемое во&nbsp;время тестирования юзабилити.</p>
+          </div>
+        </div>
+      </div>      
+
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>3 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Дорожная карта&nbsp;&mdash; это визуализация ваших стратегических инициатив и&nbsp;основных направлений работы, которыми вы&nbsp;будете заниматься</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardTrue">
+          <div>
+            <h3 class="question-card-true">3 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это правда</p>
+            <div class="A_MenuItem_non-active">Дорожная карта&nbsp;&mdash; это визуализация ваших стратегических инициатив и&nbsp;основных направлений работы, которыми вы&nbsp;будете заниматься</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Она связывает воедино стратегию (&laquo;почему&raquo;), работу, которую нужно будет выполнить для достижения целей (&laquo;что&raquo;), и&nbsp;график выполнения (&laquo;когда&raquo;). В&nbsp;качестве высокоуровневого плана того, как вы&nbsp;будете достигать своих целей, дорожная карта помогает представить работу, которую необходимо выполнить, вместе с&nbsp;соответствующим графиком.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>4 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Даже создав дорожную карту, команда не&nbsp;должна отталкиваться от&nbsp;неё полностью, ибо она не&nbsp;детальна</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardFalse">
+          <div>
+            <h3 class="question-card-false">4 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это ложь</p>
+            <div class="A_MenuItem_non-active">Даже создав дорожную карту, команда не&nbsp;должна отталкиваться от&nbsp;неё полностью, ибо она не&nbsp;детальна</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Включив стратегические элементы, временные рамки и&nbsp;приоритетную работу, которую команда согласилась вЫПолнитЬ, ВЫ&nbsp;можете быть уверены, что в&nbsp;дорожной карте есть все правильные ответы. Помните, что дорожная карта&nbsp;&mdash; это обещание того, что вы&nbsp;сделаете, а&nbsp;не&nbsp;как вы&nbsp;это сделаете. Люди в&nbsp;любой команде могут извлечь выгоду из&nbsp;создания дорожной карты и&nbsp;ссылки на&nbsp;нее.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>5 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">С&nbsp;помощью инструмента Lean Canvas мы&nbsp;узнали таких гигантов как Google, Amazon, Youtube, Facebook</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardFalse">
+          <div>
+            <h3 class="question-card-false">5 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это ложь</p>
+            <div class="A_MenuItem_non-active">С&nbsp;помощью инструмента Lean Canvas мы&nbsp;узнали таких гигантов как Google, Amazon, Youtube, Facebook</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Методология бережливого производства (lean methodology), известная внедрением различных инструментов управления продуктами, таких как lean canvas, стала популярной после того, как упомянутые гиганты уже были на&nbsp;пути к&nbsp;успеху. И, скорее всего, их&nbsp;истории легли в&nbsp;основу этого продвинутого мышления.</p>
+          </div>
+        </div>
+      </div>    
+      
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>6 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Lean Canvas&nbsp;&mdash; мощный инструмент для описания и&nbsp;обсуждения бизнес-модели стартапа или нового продукта</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardTrue">
+          <div>
+            <h3 class="question-card-true">6 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это правда</p>
+            <div class="A_MenuItem_non-active">Lean Canvas&nbsp;&mdash; мощный инструмент для описания и&nbsp;обсуждения бизнес-модели стартапа или нового продукта</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Детище Эша Маурьи, lean canvas, представляет собой обновленную Canvas бизнес-модели, которая позволяет исследовать перспективы бизнеса, используя подход &laquo;проблема-решение&raquo;. Этот улучшенный подход идеально подходил для стартапов.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>7 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">User Flow&nbsp;&mdash; это наглядное представление действий пользователей на&nbsp;будущем ресурсе для достижения значимых целей</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardTrue">
+          <div>
+            <h3 class="question-card-true">7 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это правда</p>
+            <div class="A_MenuItem_non-active">User Flow&nbsp;&mdash; это наглядное представление действий пользователей на&nbsp;будущем ресурсе для достижения значимых целей</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">UserFlow создается для интуитивно понятного проектирования продуктов, предоставляя пользователям правильную информацию&nbsp;В нужное время и&nbsp;позволяя им&nbsp;выполнять желаемые задачи за&nbsp;минимальное количество шагов, насколько это возможно.</p>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>8 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Понятия User Flow и&nbsp;Customer Journey Map (CJM)&nbsp;&mdash; взаимозаменяемые</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardFalse">
+          <div>
+            <h3 class="question-card-false">8 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это ложь</p>
+            <div class="A_MenuItem_non-active">Понятия User Flow и&nbsp;Customer Journey Map (CJM)&nbsp;&mdash; взаимозаменяемые</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Обычно в&nbsp;User Flow не&nbsp;делают акцент ни&nbsp;на&nbsp;ощущения пользователя, ни&nbsp;на&nbsp;множество возможных уровней решения. Основная задача сценариев&nbsp;&mdash; показать процесс работы с&nbsp;продуктом. User Journey Map больше ориентированы на&nbsp;пользовательский опыт клиента. Они выявляют проблемные точки и&nbsp;моменты радости.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-card" onclick="flipCard(event)">
+        <div class="front O_QuestionCard">
+          <div>
+            <h3>9 вопрос</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Продуктовые команды предпочитают разбивать работу по&nbsp;разработке на&nbsp;пользовательские истории, а&nbsp;не&nbsp;на&nbsp;характеристики продукта или требования к&nbsp;продукту</p>           
+          </div>
+          <div>          
+            <button onclick="handleAnswer(event, this, true)">Правда</button>
+            <button onclick="handleAnswer(event, this, false)">Ложь</button>
+          </div>
+        </div>
+        <div class="back O_QuestionCardTrue">
+          <div>
+            <h3 class="question-card-true">9 ответ</h3>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Это правда</p>
+            <div class="A_MenuItem_non-active">Продуктовые команды предпочитают разбивать работу по&nbsp;разработке на&nbsp;пользовательские истории, а&nbsp;не&nbsp;на&nbsp;характеристики продукта или требования к&nbsp;продукту</div> 
+          </div>
+          <div>
+            <div class="A_CardLineQ"></div>
+            <p class="A_Paragraph">Добавление слова &laquo;пользователь&raquo; в&nbsp;истории помогает привлечь внимание к&nbsp;тем, для кого создается продукт. Это может помочь прояснить, почему шаблон &laquo;Как разработчик, я&nbsp;хочу&raquo; может быть точным только в&nbsp;том случае, если наши конечные пользователи являются разработчиками.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <div class="FooterBlock">
+
       <div class="S_Navigation">
         <div class="O_FooterColumn">
           <div class="A_FooterChapter">Исследование</div>
           <hr>
           <div class="M_ChapterList">
-            <a href="./parts/research.html" class="A_MenuItem">Об этапе</a>
-            <a class="A_MenuItem">MVP</a>
-            <a class="A_MenuItem">Product Market Fit</a>
-            <a class="A_MenuItem">Бизнес требования</a>
-            <a class="A_MenuItem">Функциональные требования</a>
-            <a class="A_MenuItem">Как генерировать идеи</a>
+            <a href="../parts/research.html" class="A_MenuItem">Об этапе</a>
+            <a href="../parts/research/history.html" class="A_MenuItem">История цифровизации</a>
+            <a href="../parts/research/digital_product.html" class="A_MenuItem">Цифровой продукт</a>
+            <a href="../parts/research/digital_process.html" class="A_MenuItem">Процесс проектирования цифровых продуктов</a>
+            <a href="../parts/research/mvp.html" class="A_MenuItem">MVP</a>
+            <a href="../parts/research/product_market_fit.html" class="A_MenuItem">Product Market Fit</a>
+            <a href="../parts/research/business_requirements.html" class="A_MenuItem">Бизнес требования</a>
+            <a href="../parts/research/functional_requirements.html" class="A_MenuItem">Функциональные требования</a>
+            <a href="../parts/research/how_to_generate_ideas.html" class="A_MenuItem">Как генерировать идеи</a>
           </div>
         </div>
         <div class="O_FooterColumn">
           <div class="A_FooterChapter">Определение</div>
           <hr>
           <div class="M_ChapterList">
-            <a class="A_MenuItem">Об этапе</a>
-            <a class="A_MenuItem">Целевая аудитория</a>
-            <a class="A_MenuItem">Анализ конкурентной среды</a>
-            <a class="A_MenuItem">Количественные <br />и&nbsp;качественные методы опроса</a>
-            <a class="A_MenuItem">Customer Development</a>
-            <a class="A_MenuItem">SWOT</a>
-            <a class="A_MenuItem">SMART</a>
-            <a class="A_MenuItem">Юнит-экономика</a>
-            <a class="A_MenuItem">Jobs to be done</a>
-            <a class="A_MenuItem">CJM</a>
+            <a href="../parts/define.html" class="A_MenuItem">Об этапе</a>
+            <a href="../parts/define/target_audience.html" class="A_MenuItem">Целевая аудитория</a>
+            <a href="../parts/define/competitor_analysis.html" class="A_MenuItem">Анализ конкурентной среды</a>
+            <a href="../parts/define/interview_methods.html" class="A_MenuItem">Количественные <br />и&nbsp;качественные методы опроса</a>
+            <a href="../parts/define/customer_development.html" class="A_MenuItem">Customer Development</a>
+            <a href="../parts/define/swot.html" class="A_MenuItem">SWOT</a>
+            <a href="../parts/define/smart.html" class="A_MenuItem">SMART</a>
+            <a href="../parts/define/unit_economics.html" class="A_MenuItem">Юнит-экономика</a>
+            <a href="../parts/define/jtbd.html" class="A_MenuItem">Jobs to be done</a>
+            <a href="../parts/define/cjm.html" class="A_MenuItem">CJM</a>
           </div>
         </div>
         <div class="O_FooterColumn">
           <div class="A_FooterChapter">Разработка</div>
           <hr>
           <div class="M_ChapterList">        
-            <a class="A_MenuItem">Об этапе</a>
-            <a class="A_MenuItem">Roadmap</a>
-            <a class="A_MenuItem">Lean Canvas</a>
-            <a class="A_MenuItem">UserFlow</a>
-            <a class="A_MenuItem">User Stories</a>
+            <a href="../parts/develop.html" class="A_MenuItem">Об этапе</a>
+            <a href="../parts/develop/roadmap.html" class="A_MenuItem">Roadmap</a>
+            <a href="../parts/develop/lean_canvas.html" class="A_MenuItem">Lean Canvas</a>
+            <a href="../parts/develop/user_flow.html" class="A_MenuItem">UserFlow</a>
+            <a href="../parts/develop/user_stories.html" class="A_MenuItem">User Stories</a>
           </div>
         </div>
         <div class="O_FooterColumn">
           <div class="A_FooterChapter">Реализация</div>
           <hr>
           <div class="M_ChapterList">
-            <a class="A_MenuItem">Об этапе</a>
-            <a class="A_MenuItem">Что пользователь получает</a>
+            <a href="../parts/deliver.html" class="A_MenuItem">Об этапе</a>
+            <a href="../parts/deliver/what_user_gets.html" class="A_MenuItem">Что пользователь получает</a>
           </div>
         </div>
         <div class="O_FooterColumn">
@@ -151,7 +502,7 @@
       </div>
 
       <div class="O_FooterInformation">
-        <img src="../images/A_Logotype.svg" alt="">
+        <img src="./../images/A_Logotype.svg" alt="">
         <div class="A_Paragraph">Проект, который познакомит с&nbsp;разными инструментами, используемыми в&nbsp;разработке цифровых продуктов. Создан в&nbsp;рамках дипломной работы на&nbsp;программе &laquo;Дизайн и&nbsp;программирование&raquo; <br />
           в&nbsp;Школе дизайна НИУ ВШЭ.</div>
           <div class="A_Caption">Сделала студентка
@@ -166,8 +517,64 @@
           <a class="A_MenuItem">Telegram</a>
         </div>
       </div>
-      
+
     </div>
+
+            
+    <script>
+      function flipCard(card) {
+        card.classList.toggle('flipped');
+      }
+
+      function handleAnswer(event, button, isTrue) {
+        event.stopPropagation();
+        const card = button.closest('.question-card');
+        card.classList.add('flipped', isTrue ? 'true' : 'false');
+      }
+    </script>
+
+    <script>
+        // Получаем элементы DOM
+      const stickyCardAbout = document.querySelector('.O_StickyCardAbout');
+      const paragraphs = stickyCardAbout.querySelectorAll('.A_Paragraph');
+
+      // Определяем тексты для разных моментов прокрутки
+      const textByPosition = {
+      0: [
+      '— Планирование и определение контекста',
+      '— Проведение первичных исследований с клиентами и соответствующими экспертами',
+      '— Использование существующих исследований посредством вторичных или кабинетных исследований',
+      ],
+      1200: [
+      'Раздел фокусируется на процессе разработки цифровых продуктов, включая различные аспекты и инструменты этой области.',
+      'Важной частью разработки является Agile-методология, которая подразумевает гибкий и итеративный подход к разработке, позволяющий быстро адаптироваться к изменениям и получать обратную связь от пользователей.',
+      'Отдельное внимание уделяется процессу тестирования, включая автоматизированное тестирование, функциональное тестирование, тестирование производительности и безопасности.',
+      ],
+      2800: [
+      'Раздел также охватывает темы разработки интерфейсов пользователя (UI) и пользовательского опыта (UX), обращая внимание на важность интуитивного и привлекательного дизайна.',
+      'Страница предоставляет информацию о различных языках программирования и технологиях, используемых в разработке, таких как JavaScript, Python, HTML/CSS и многие другие.',
+      '',      ],
+      };
+
+      // Обработчик события прокрутки страницы
+      window.addEventListener('scroll', function () {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      // Проверяем текущую позицию прокрутки и обновляем тексты внутри A_Paragraph
+      paragraphs.forEach((paragraph, index) => {
+      let newText = '';
+      const positions = Object.keys(textByPosition).map(Number);
+      const closestPosition = positions.reduce((prev, curr) =>
+        Math.abs(curr - scrollTop) < Math.abs(prev - scrollTop) ? curr : prev
+      );
+      if (scrollTop >= closestPosition) {
+        const texts = textByPosition[closestPosition];
+        newText = texts[index % texts.length];
+      }
+      paragraph.innerHTML = newText;
+      });
+      });
+    </script>
 
   </body>
 </html>

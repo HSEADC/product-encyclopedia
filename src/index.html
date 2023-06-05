@@ -2,8 +2,10 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Энциклопедия цифрового продукта</title>
     <analytics></analytics>
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
 
@@ -20,6 +22,32 @@
         <a href="./parts/deliver.html" class="A_MenuItem_non-active">Реализация</a>
       </div>
     </div>
+
+    <div class="O_MenuMob header">
+      <a href="" class="logo"><img src="images/A_LogotypeMob.svg" alt=""></a>
+      <!-- Hamburger icon -->
+      <input class="side-menu" type="checkbox" id="side-menu"/>
+      <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+      <!-- Menu -->
+      <nav class="nav">
+          <ul class="menu">
+              <li>        
+                <a href="./parts/research.html" class="A_Paragraph">Исследование</a>
+              </li>
+              <li>
+                <a href="./parts/define.html" class="A_Paragraph">Определение</a>
+              </li>
+              <li>
+                <a href="./parts/develop.html" class="A_Paragraph">Разработка</a>
+              </li>
+              <li>
+                <a href="./parts/deliver.html" class="A_Paragraph">Реализация</a>
+              </li>
+          </ul>
+      </nav>
+    </div>
+    
+
 
     <div class="M_SectionDescription">
       <div class="A_Title">
@@ -41,6 +69,13 @@
         <div class="A_HeaderTwo">Познакомьтесь <br> с&nbsp;задачами</div>
         <div class="A_Paragraph">Этот проект создан, чтобы познакомиться с&nbsp;задачами процесса проектирования цифрового продукта</div>
       </div>
+    </div>
+
+    <div class="M_SectionDescriptionAbout">
+      <div class="A_HeaderTwo">
+        Не сборник статей, <br> а учебник, который <br> помогает в поиске информации 
+      </div>
+      <!-- <div class="A_IllustrationBlockFirst"><img src="images/A_IllustrationBlockFirst.svg" alt=""></div> -->
     </div>
 
     <div class="O_EmailFormBlock">
@@ -129,8 +164,8 @@
         <div class="A_MenuItem_non-active">&copy;&nbsp;2023&nbsp;ЭНЦИКЛОПЕДИЯ&nbsp;ЦИФРОВОГО&nbsp;ПРОДУКТА</div>
         <div class="M_LinkList">
           <a class="A_MenuItem">Школа&nbsp;дизайна&nbsp;НИУ&nbsp;ВШЭ</a>
-          <a class="A_MenuItem">Instagram</a>
-          <a class="A_MenuItem">Telegram</a>
+          <a href="https://instagram.com/product.encyclopedia" class="A_MenuItem">Instagram</a>
+          <a href="https://t.me/digitalencyclopedia" class="A_MenuItem">Telegram</a>
         </div>
       </div>
 
