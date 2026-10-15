@@ -146,7 +146,7 @@ function SurveyComponent() {
         <div>
           {currentQuestionIndex < questions.length && !showResults ? (
             <div className='M_QuestionCard'>
-
+              
               <div>
                 <div className='A_ProgressBar'>
                   <progress value={getProgressPercentage()} max={100} />
