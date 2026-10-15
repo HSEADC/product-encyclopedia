@@ -95,9 +95,34 @@ body {
       font-size: 16px;
     }
 
+    .S_SectionTeasers {
+      margin-top: 60px;
+      gap: 48px;
+      padding: 0 16px 60px;
+    }
+
+    .O_SectionTeaser {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 32px;
+      padding-top: 24px;
+    }
+
+    .M_SectionTeaserTitle {
+      position: static;
+      padding-right: 0;
+      gap: 16px;
+    }
+
     .A_QuoteItalic,
     .A_HeaderThree {
       font-size: 24px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .M_TeaserGrid {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 32px;
     }
   }
 
