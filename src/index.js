@@ -12,30 +12,35 @@ import QuizFuncComponent from './javascript/int_modules/questions_func.jsx'
 
 document.addEventListener('DOMContentLoaded', () => {
     const container1 = document.getElementById('timeline-root')
+    if (!container1) return
     const root1 = createRoot(container1)
     root1.render(<Timeline />)
   })
 
 document.addEventListener('DOMContentLoaded', () => {
     const container2 = document.getElementById('survey-comp')
+    if (!container2) return
     const root2 = createRoot(container2)
     root2.render(<SurveyComponent />)
   })
   
 document.addEventListener('DOMContentLoaded', () => {
     const container3 = document.getElementById('quiz-comp')
+    if (!container3) return
     const root3 = createRoot(container3)
     root3.render(<QuizComponent />)
   })
 
 document.addEventListener('DOMContentLoaded', () => {
     const container4 = document.getElementById('product-comp')
+    if (!container4) return
     const root4 = createRoot(container4)
     root4.render(<ProductComponent />)
   })
 
 document.addEventListener('DOMContentLoaded', () => {
     const container5 = document.getElementById('quiz-cusdev-comp')
+    if (!container5) return
     const root5 = createRoot(container5)
     root5.render(<QuizCusDevComponent />)
   })
@@ -43,12 +48,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const container6 = document.getElementById('burger-menu')
+    if (!container6) return
     const root6 = createRoot(container6)
     root6.render(<BurgerMenu />)
   })
   
   document.addEventListener('DOMContentLoaded', () => {
     const container7 = document.getElementById('quiz–func-comp')
+    if (!container7) return
     const root7 = createRoot(container7)
     root7.render(<QuizFuncComponent />)
   })

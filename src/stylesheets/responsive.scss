@@ -1,0 +1,127 @@
+// Дополнения к мобильной вёрстке из index.scss (бургер-меню и перестройка в одну колонку
+// при ширине до 1024px): здесь только то, что не даёт содержимому вылезать за край экрана
+
+body {
+
+  img {
+    max-width: 100%;
+  }
+
+  .A_IllustrationBlockFirst img {
+    width: 100%;
+    height: auto;
+  }
+
+  .A_Table,
+  .A_TableModule {
+    min-width: 0;
+
+    img {
+      height: auto;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      aspect-ratio: 800 / 500;
+    }
+  }
+
+  .M_ChapterList .A_MenuItem {
+    overflow-wrap: anywhere;
+  }
+
+  .M_BreadCrumbs {
+    flex-wrap: wrap;
+  }
+
+  // Лесенка дат считается в процентах от ширины списка, поэтому он должен занимать всю строку
+  .M_Timeline,
+  #timeline-root {
+    width: 100%;
+  }
+
+  @media (max-width: 1024px) {
+    .InformationBlock,
+    .InformationChapterBlock {
+      padding: 24px 16px 60px;
+    }
+
+    .A_Table,
+    .A_TableModule {
+      padding: 24px 16px;
+    }
+
+    .DescriptionTextBlock {
+      margin: 0 16px;
+    }
+
+    .M_DescriptionText {
+      height: auto;
+      min-height: 240px;
+    }
+
+    .A_TableTest {
+      padding: 24px 16px 60px;
+    }
+
+    .question-card {
+      height: auto;
+    }
+
+    .question-card .front,
+    .question-card .back {
+      min-height: 360px;
+    }
+
+    .O_QuestionCard,
+    .O_QuestionCardTrue,
+    .O_QuestionCardFalse {
+      padding: 24px;
+      gap: 24px;
+    }
+
+    .S_Navigation,
+    .O_FooterInformation {
+      padding: 32px 16px 48px;
+    }
+
+    .O_Links {
+      padding: 24px 16px;
+    }
+
+    .dates li {
+      font-size: 16px;
+    }
+
+    .A_QuoteItalic,
+    .A_HeaderThree {
+      font-size: 24px;
+    }
+  }
+
+  // Узкие телефоны: длинные слова в заголовках («ФУНКЦИОНАЛЬНЫЕ», «ЭНЦИКЛОПЕДИЯ») не помещаются в 36–42px
+  @media (max-width: 480px) {
+    .A_Title {
+      font-size: clamp(30px, 10.5vw, 42px);
+    }
+
+    .A_HeaderOne {
+      font-size: 28px;
+    }
+
+    .A_HeaderTwo {
+      font-size: 26px;
+    }
+
+    .A_Title,
+    .A_HeaderOne,
+    .A_HeaderTwo,
+    .A_Quote,
+    .A_QuoteItalic {
+      overflow-wrap: break-word;
+      hyphens: auto;
+    }
+  }
+}

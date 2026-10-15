@@ -5,6 +5,7 @@
 @import 'stylesheets/index.scss';
 @import 'stylesheets/page.scss';
 @import 'stylesheets/chapters.scss';
+@import 'stylesheets/responsive.scss';
 
 .timeline {
   margin: 0;
