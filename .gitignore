@@ -1,4 +1,8 @@
 .DS_Store
 yarn-error.log
+/.claude
 /node_modules
 /dev_build
+/docs
+/book
+book_vs_site_report.md
