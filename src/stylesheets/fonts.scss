@@ -1,24 +1,24 @@
 @font-face {
-  font-family: 'Wermut';
-  src: url('fonts/Wermut.woff2') format('woff2'),
-  url('fonts/Wermut.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Panama";
+  src:
+    local("Panama"),
+    url("fonts/Panama_Regular.otf") format("opentype");
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: 'Wermut';
-  src: url('fonts/WermutItalic.woff2') format('woff2'),
-  url('fonts/WermutItalic.woff') format('woff');
-  font-weight: 400;
+  font-family: "Panama";
+  src:
+    local("Panama"),
+    url("fonts/Panama_Bold.otf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Panama";
+  src:
+    local("Panama"),
+    url("fonts/Panama_Italic.otf") format("opentype");
+  font-weight: normal;
   font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url('fonts/HelveticaNeue.woff2') format('woff2'),
-  url('fonts/HelveticaNeue.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
 }

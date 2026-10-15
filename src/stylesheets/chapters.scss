@@ -1,136 +1,132 @@
 body {
+  .A_QuoteItalic {
+    font-family: var(--font-family-display);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 100%;
+    text-align: center;
+  }
 
-    .A_QuoteItalic {
-        font-family: 'Wermut';
-        font-style: italic;
-        font-weight: 400;
-        font-size: 34px;
-        line-height: 100%;
-        text-align: center;
-    }
+  .A_HeaderThree {
+    font-family: var(--font-family-display);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 99.99%;
+    letter-spacing: -0.03em;
+    color: var(--black);
+  }
 
-    .A_HeaderThree {
-        font-family: 'Wermut';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 34px;
-        line-height: 99.99%;
-        letter-spacing: -0.03em;
-        color: var(--black);
-    }
+  .M_BreadCrumbs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+  }
 
-    .M_BreadCrumbs {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        gap: 10px;
-    }
+  .M_Tags {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+  }
 
-    .M_Tags {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 10px;
-    }
+  .M_PreviewText {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: stretch;
+    padding: 0px;
+    gap: 20px;
+    justify-content: space-between;
+  }
 
-    .M_PreviewText {
-        display: flex;
-        flex-direction: row;
-        align-content: space-between;
-        align-items: stretch;
-        padding: 0px;
-        gap: 20px;
-        justify-content: space-between;
-    }
+  .M_PreviewText div {
+    width: 50%;
+  }
 
-    .M_PreviewText div {
-        width: 50%;
-    }
+  .M_PreviewText a {
+    font-family: var(--font-family-display);
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 98%;
+    letter-spacing: -0.03em;
+    color: var(--black);
+    text-decoration: none;
+  }
 
-    .M_PreviewText a {
-        font-family: 'Wermut';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 98%;
-        letter-spacing: -0.03em;
-        color: var(--black);
-        text-decoration: none;
-    }
+  .M_PreviewText a:hover {
+    color: var(--dark-blue);
+  }
 
-    .M_PreviewText a:hover {
-        color: var(--dark-blue);
-    }
+  .M_PreviewText .A_Paragraph {
+    opacity: 0.6;
+  }
 
-    .M_PreviewText .A_Paragraph {
-        opacity: 0.6;
-    }
-    
+  .M_StickyCard {
+    position: sticky;
+    top: 95px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
 
-    .M_StickyCard {
-        position: sticky;
-        top: 95px;
-        height: 85vh;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 24px;
-    }
+  .M_CaptionPhoto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 
-    .M_CaptionPhoto {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
+  .M_CaptionPhoto img {
+    object-fit: contain;
+    width: 100%;
+  }
 
-    .M_CaptionPhoto img {
-        object-fit: contain;
-        width: 100%;
-    }
+  .O_StickyCardInfo {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    background-color: var(--beige);
+    border-radius: 10px;
+    height: 80vh;
+    width: 30vw;
+  }
 
-    .O_StickyCardInfo {
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 24px;
-        gap: 24px;
-        background-color: var(--beige);
-        border-radius: 10px;
-        height: 80vh;
-        width: 30vw;
-    }
+  .O_CaptionBlock {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+  }
 
-    .O_CaptionBlock {
-        display: grid;
-        grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 20px;
-        width: 100%;
-    }
+  .O_СhapterPreviews {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 13px;
+    margin-top: 20px;
+  }
 
-    .O_СhapterPreviews {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 13px;
-        margin-top: 20px;
-    }
-
-    .InformationChapterBlock {
-        display: grid;
-        grid-template-columns: 2fr 4fr;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 34px 34px 100px 34px;
-        gap: 20px;
-        margin-top: 60px;
-        width: 100%;
-    }
-
+  .InformationChapterBlock {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 34px 34px 100px 34px;
+    gap: 20px;
+    margin-top: 60px;
+    width: 100%;
+  }
 }

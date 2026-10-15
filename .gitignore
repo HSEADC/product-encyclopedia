@@ -1,6 +1,7 @@
 .DS_Store
 yarn-error.log
 /.claude
+/.vscode
 /node_modules
 /dev_build
 /docs
